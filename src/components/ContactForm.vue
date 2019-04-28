@@ -4,7 +4,7 @@
 
       <p hidden>
         <label>
-        Don’t fill this out: <input name="bot-field" />
+        Don’t fill this out: <input v-model="formData['bot-field']" name="bot_field" />
         </label>
       </p>
       <input type="hidden" name="form-name" value="contact" />
@@ -42,7 +42,9 @@
   export default {
     data() {
       return {
-        formData: {},
+        formData: {
+          'form-name': "contact"
+        },
       }
     },
     methods: {
