@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-default {
+  @apply rounded-full font-sans text-lg no-underline border-0 cursor-pointer shadow px-6 py-3
+}
+
 body {
   margin: 0;
 }

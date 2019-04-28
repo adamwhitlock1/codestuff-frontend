@@ -147,23 +147,13 @@
     <!-- START CONTACT ROW -->
     <div class="flex flex-row items-center py-6 px-12 mb-32 pb-32" id="contact">
 
-      <!-- START 1/6 COLUMN -->
-      <div class="text-white text-center bg-adobe w-1/2 mr-6-neg rounded shadow-deep p-10 m-3 z-50"><img src="@/assets/images/designer_panel_3_edits_all.jpg" alt=""></div>
-      <!-- START 5/6 COLUMN -->
-      <div class="text-white bg-black w-1/2 py-1 pl-12 pr-6 rounded">
-        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">Image Edits</h4>
-        <p class="font-extrabold mx-10 my-0 text-grey-darker text-center rounded px-10 py-4 bg-grey-lightest shadow">The edits section is the largest tab, because it includes nested accordions with tools for background removal, camera raw effects, layer effects, and photo retouching.</p>
-      <div class="flex-row flex">
-        <div class="px-8 w-1/3">
 
-        </div>
 
-      </div>
-      <div class="flex flex-row text-center">
-        <div class="w-full pb-12 mt-6">
-
-        </div>
-      </div>
+      <!-- START FULL COLUMN -->
+      <div class="text-white bg-cyan w-full py-1 pl-12 pr-6 rounded shadow-deep">
+        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">Contact Me</h4>
+        <p class="font-extrabold mx-10 my-0 text-cyan-darker text-center rounded px-10 py-4 bg-cyan-lightest shadow">I am currently looking for opportunities involving Vue.js, Node, Vuex, GraphQl, and various other modern technology stacks. Send me a message, and if you would like to review my resume, it can be provided upon request only. <br>Thank you,<br>Adam Whitlock</p>
+        <contact-form></contact-form>
       </div>
     </div>
 
@@ -173,25 +163,11 @@
 </template>
 
 <script>
-import Vue from 'vue'
-Vue.directive('scrolly', {
-  bind(el, binding, vnode){
-    console.log("directive worked");
-
-    const onclick = event => {
-      event.stopPropagation()
-      console.log(binding.value.id);
-      document.querySelector(binding.value.id).scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
-
-    el.addEventListener('click', onclick)
-  }
-})
-
+import ContactForm from "../components/ContactForm"
 export default {
-
+components: {
+  ContactForm
+}
 }
 </script>
 

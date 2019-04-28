@@ -2,7 +2,7 @@
   <on-click-outside :do="handleClickOutside">
     <div class="relative mx-auto">
       <a @click="open = !open" type="button" class="w-full block bg-transparent cursor-pointer text-white rounded py-2 focus:outline-0">
-        {{dropdownText}}
+        {{dropdownText}}&nbsp; <font-awesome :icon="['fas', 'chevron-down']" :class="dropdownStatus"/>
       </a>
       <transition name="dropdownFade">
       <div v-show="open" class="px-4 py-2 text-center rounded bg-white border absolute z-50 w-32 shadow-lg">
@@ -44,11 +44,27 @@ export default {
         this.open = false;
       }
     }
+  },
+  computed: {
+    dropdownStatus() {
+      if (this.open == false){
+        return "closed"
+      } else {
+        return "open"
+      }
+    }
   }
 };
 </script>
 
 <style>
+.open {
+  transform: scaleY(-1);
+}
+.fa-chevron-down {
+  margin-bottom: -2px;
+  transition: .3s;
+}
 .dropdownFade-enter-active, .dropdownFade-leave-active {
   transition: .35s;
 }

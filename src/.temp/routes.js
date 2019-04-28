@@ -12,15 +12,15 @@ export default [
     meta: { isStatic: true }
   },
   {
-    name: "contact",
-    path: "/contact",
-    component: () => import(/* webpackChunkName: "component--contact" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Contact.vue"),
-    meta: { isStatic: true }
-  },
-  {
     name: "design",
     path: "/design",
     component: () => import(/* webpackChunkName: "component--design" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Design.vue"),
+    meta: { isStatic: true }
+  },
+  {
+    name: "contact",
+    path: "/contact",
+    component: () => import(/* webpackChunkName: "component--contact" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Contact.vue"),
     meta: { isStatic: true }
   },
   {
