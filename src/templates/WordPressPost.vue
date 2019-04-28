@@ -16,13 +16,17 @@
         </li>
       </ul>
     </template>
-    <template v-if="$page.wordPressPost.tags.length">
+    <template v-if="hasTags">
       <h4>Tags</h4>
       <ul class="list tags">
         <li v-for="tag in $page.wordPressPost.tags" :key="tag.id" >
           <g-link :to="tag.path">{{ tag.title }}</g-link>
         </li>
       </ul>
+    </template>
+    <template v-else>
+      <h4>Tags</h4>
+      <p>Sorry no tags present for this post.</p>
     </template>
   </Layout>
 </template>
@@ -56,6 +60,18 @@ export default {
   metaInfo () {
     return {
       title: this.$page.wordPressPost.title
+    }
+  },
+  computed:  {
+    hasTags(){
+      if ( this.$page.wordPressPost.tags == null ){
+        return false;
+      } else if ( this.$page.wordPressPost.tags.length > 0 ) {
+        console.log(this.$page.wordPressPost.tags.length);
+        return true;
+      } else {
+        return false;
+      }
     }
   }
 }
