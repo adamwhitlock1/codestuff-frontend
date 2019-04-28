@@ -86,7 +86,7 @@ import Dropdown from "./Dropdown"
     },
     data(){
       return {
-        open
+
       }
     }
   }
