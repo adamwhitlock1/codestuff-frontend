@@ -1,13 +1,13 @@
 <template>
   <Layout>
-
+<ClientOnly>
     <div class="flex items-center flex-row py-6 px-12">
         <div class="text-white shadow-md text-center p-10 pr-16 bg-yellow rounded w-1/3">
         <h4 class="text-4xl text-black m-0 mb-3">The Designer Panel:</h4>
         <p class="font-extrabold mx-12 my-0 text-yellow-darkest rounded px-10 py-4 bg-yellow-lightest shadow">html, css, javascript, nodejs, adobe scripting libraries.</p>
         <p class="text-black mb-4">A concept that was developed while working as a graphic designer. This Photoshop extension includes over 100 tools and workflow accelerators for the daily designer. The Designer Panel has a three tab structure including Utilities, Templates, and Edits.</p>
         <div class="my-8">
-        <a href="#utils" class="rounded-full text-cyan no-underline bg-white shadow px-6 py-3">explore the utilities</a>
+        <button v-scrolly='{id: "#utils"}' class="rounded-full font-sans border-0 text-yellow-darkest text-lg no-underline bg-white shadow px-6 py-3">explore the utilities</button>
         </div>
 
       </div>
@@ -63,7 +63,7 @@
       </div>
       <div class="flex flex-row text-center">
         <div class="w-full pb-12">
-      <a href="#templates" class="rounded-full text-magenta no-underline bg-white shadow px-6 py-3">all about templates</a>
+      <button v-scrolly='{id: "#templates"}' class="rounded-full font-sans border-0 text-magenta text-lg no-underline bg-white shadow px-6 py-3">all about templates</button>
         </div>
       </div>
       </div>
@@ -111,7 +111,7 @@
       </div>
       <div class="flex flex-row text-center">
         <div class="w-full pb-12 mt-6">
-      <a href="#edits" class="rounded-full text-cyan no-underline bg-white shadow px-6 py-3">last but not least, the edits tab</a>
+      <button v-scrolly='{id: "#edits"}' class="rounded-full text-cyan font-sans no-underline text-lg bg-white shadow px-6 py-3">last but not least, the edits tab</button>
         </div>
       </div>
       </div>
@@ -138,7 +138,7 @@
       </div>
       <div class="flex flex-row text-center">
         <div class="w-full pb-12 mt-6">
-      <a href="#contact" class="rounded-full text-cyan no-underline bg-white shadow px-6 py-3">Want an extension like this? Hire me</a>
+      <button v-scrolly='{id: "#contact"}' class="rounded-full font-sans text-black text-lg no-underline bg-white shadow px-6 py-3">Want an extension like this? Hire me</button>
         </div>
       </div>
       </div>
@@ -161,21 +161,38 @@
       </div>
       <div class="flex flex-row text-center">
         <div class="w-full pb-12 mt-6">
-      <a href="#edits" class="rounded-full text-cyan no-underline bg-white shadow px-6 py-3">Want an extension like this? Hire me</a>
+
         </div>
       </div>
       </div>
     </div>
 
-
+</ClientOnly>
 
   </Layout>
 </template>
 
 <script>
-  export default {
+import Vue from 'vue'
+Vue.directive('scrolly', {
+  bind(el, binding, vnode){
+    console.log("directive worked");
 
+    const onclick = event => {
+      event.stopPropagation()
+      console.log(binding.value.id);
+      document.querySelector(binding.value.id).scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+
+    el.addEventListener('click', onclick)
   }
+})
+
+export default {
+
+}
 </script>
 
 <style>

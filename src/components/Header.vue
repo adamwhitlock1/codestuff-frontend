@@ -18,11 +18,11 @@
       <div class="block lg:hidden">
         <button
           id="nav-toggle"
-          class="flex items-center px-3 py-2 rounded text-grey border-grey-dark hover:text-white hover:border-white"
+          class="flex items-center px-3 py-2 bg-transparent active:border-0 focus:border-0 focus:outline-none active:outline-none border-0 mr-4 hover:text-white hover:border-white"
           @click="showMobileNav"
         >
           <svg
-            class="fill-current h-3 w-3"
+            class="fill-current text-white h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -35,7 +35,7 @@
       <div
         id="nav-content"
         :class="{'h-px opacity-0': isMobileNavHidden}"
-        class="w-full flex-grow pt-4 lg:flex lg:items-center lg:w-auto lg:block lg:pt-1 lg:pb-2 lg:h-auto h-48 lg:opacity-100 -mt-4 -mb-5"
+        class="w-full flex-grow pt-4 lg:flex lg:items-center lg:w-auto lg:block lg:pt-1 lg:pb-2 h-auto lg:opacity-100 -mt-4 -mb-5"
       >
         <ul class="list-reset lg:flex justify-end flex-1 items-center px-10">
           <li class="p-2 mx-3 nav-link">
@@ -65,7 +65,7 @@
               to="/photography"
             >photography</g-link>
           </li>
-          <li class="p-2 mx-3 nav-link">
+          <li class="p-2 mx-3 lg:pb-2 md:pb-12 sm:pb-12 nav-link">
             <g-link
               class="text-white no-underline"
               to="/contact"
@@ -79,17 +79,22 @@
 
 <script>
 import Dropdown from "./Dropdown"
-  export default {
-    name: "Header",
-    components: {
-      Dropdown
-    },
-    data(){
-      return {
-
-      }
+export default {
+  name: "Header",
+  components: {
+    Dropdown
+  },
+  data(){
+    return {
+      isMobileNavHidden: true
+    }
+  },
+  methods: {
+    showMobileNav() {
+      this.isMobileNavHidden = !this.isMobileNavHidden
     }
   }
+}
 </script>
 
 <style>
