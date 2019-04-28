@@ -43,7 +43,8 @@
     data() {
       return {
         formData: {
-          'form-name': "contact"
+          'form-name': "contact",
+          "bot-field": ""
         },
       }
     },
