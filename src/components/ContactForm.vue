@@ -55,9 +55,6 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: this.encode({
-            'form-name': e.target.getAttribute('name'),
-            'form-email': e.target.getAttribute('email'),
-            'form-message': e.target.getAttribute('message'),
             ...this.formData,
           }),
         })
