@@ -1,5 +1,11 @@
 export default [
   {
+    name: "success",
+    path: "/success",
+    component: () => import(/* webpackChunkName: "component--success" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Success.vue"),
+    meta: { isStatic: true }
+  },
+  {
     name: "photography",
     path: "/photography",
     component: () => import(/* webpackChunkName: "component--photography" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Photography.vue"),
@@ -41,14 +47,14 @@ export default [
     component: () => import(/* webpackChunkName: "component--home" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Index.vue")
   },
   {
-    name: "wordPressPostTag",
-    path: "/tag/:slug/:page(\\d+)?",
-    component: () => import(/* webpackChunkName: "component--word-press-post-tag" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressPostTag.vue")
-  },
-  {
     name: "wordPressPost",
     path: "/:year/:month/:day/:slug",
     component: () => import(/* webpackChunkName: "component--word-press-post" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressPost.vue")
+  },
+  {
+    name: "wordPressPostTag",
+    path: "/tag/:slug/:page(\\d+)?",
+    component: () => import(/* webpackChunkName: "component--word-press-post-tag" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressPostTag.vue")
   },
   {
     name: "wordPressCategory",
