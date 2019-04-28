@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800');
+@import url("https://use.typekit.net/wwk3eyy.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.nav-link {
+  transition: .4s;
+}
+
+.nav-link:hover {
+  transform: translateY(-3px);
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: "Rift", sans-serif;
+  font-weight: 700;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-family: "Rift", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
