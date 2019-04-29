@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{233:function(o){o.exports={data:{wordPressPostTag:{title:"world",belongsTo:{pageInfo:{totalPages:1,currentPage:1},edges:[]}}}}}}]);

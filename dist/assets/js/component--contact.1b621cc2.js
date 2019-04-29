@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{241:function(t,e,n){"use strict";n.r(e);var c={},s=n(7),a=Object(s.a)(c,function(){var t=this.$createElement,e=this._self._c||t;return e("Layout",[e("h1",[this._v("Contact codestuff")])])},[],!1,null,"1c9344da",null);e.default=a.exports}}]);
