@@ -13,13 +13,15 @@ body {
   margin: 0;
 }
 
-.nav-link {
+.nav-link, a {
   transition: .4s;
 }
 
 .nav-link:hover {
   transform: translateY(-3px);
 }
+
+
 
 h1, h2, h3, .h1, .h2, .h3 {
   font-family: "Rift", sans-serif;
