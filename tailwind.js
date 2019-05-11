@@ -72,13 +72,6 @@ let colors = {
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 
-  'yellow-darkest': '#453411',
-  'yellow-darker': '#684f1d',
-  'yellow-dark': '#f2d024',
-  'yellow': '#ffed4a',
-  'yellow-light': '#fff382',
-  'yellow-lighter': '#fff9c2',
-  'yellow-lightest': '#fcfbeb',
 
   'green-darkest': '#0f2f21',
   'green-darker': '#1a4731',
@@ -127,6 +120,35 @@ let colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+
+  // custom  added color
+
+  'adobe': '#323232',
+
+  'cyan-lightest': '#85deff',
+  'cyan-lighter': '#2CC7FF',
+  'cyan-light': '#00BBFF',
+  'cyan': '#00afec',
+  'cyan-dark': '#0098D1',
+  'cyan-darker': '#0076A3',
+  'cyan-darkest': '#004D6D',
+
+  'magenta-darkest': '#600032',
+  'magenta-darker': '#8C0052',
+  'magenta-dark': '#c40075',
+  'magenta': '#ea148c',
+  'magenta-light': '#ff0097',
+  'magenta-lighter': '#ff46b4',
+  'magenta-lightest': '#ff85cd',
+
+  'yellow-darkest': '#453411',
+  'yellow-darker': '#684f1d',
+  'yellow-dark': '#f2d024',
+  'yellow': '#fff02a',
+  'yellow-light': '#fff382',
+  'yellow-lighter': '#fff9c2',
+  'yellow-lightest': '#fcfbeb',
+
 }
 
 module.exports = {
@@ -772,6 +794,7 @@ module.exports = {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    'deep': '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',

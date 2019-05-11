@@ -50,7 +50,11 @@
               {
               text: 'designer panel',
               to: '/designer-panel'
-              }
+              },
+              {
+              text: 'betapic',
+              to: '/betapic'
+              },
             ]"></dropdown>
           </li>
           <li class="p-2 mx-3 nav-link">

@@ -6,15 +6,15 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 library.add(faGithub, faTwitter)
 library.add(faChevronDown)
 
-export default function (Vue) {
+export default function(Vue) {
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.directive('scrolly', {
     bind(el, binding, vnode){
-      console.log("directive worked");
+      console.log("directive worked")
 
       const onclick = event => {
         event.stopPropagation()
-        console.log(binding.value.id);
+        console.log(binding.value.id)
         document.querySelector(binding.value.id).scrollIntoView({
           behavior: 'smooth'
         })

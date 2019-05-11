@@ -1,26 +1,36 @@
 <template>
   <Layout>
-    <h1 v-html="$page.wordPressPost.title"/>
+    <h1 v-html="$page.wordPressPost.title" />
     <img
       v-if="$page.wordPressPost.featuredMedia"
       :src="$page.wordPressPost.featuredMedia.url"
       :width="$page.wordPressPost.featuredMedia.width"
       :alt="$page.wordPressPost.featuredMedia.title"
-    />
-    <div v-html="$page.wordPressPost.content"/>
+    >
+    <div v-html="$page.wordPressPost.content" />
     <template v-if="$page.wordPressPost.categories.length">
       <h4>Posted in</h4>
       <ul class="list categories">
-        <li v-for="category in $page.wordPressPost.categories" :key="category.id" >
-          <g-link :to="category.path">{{ category.title }}</g-link>
+        <li
+          v-for="category in $page.wordPressPost.categories"
+          :key="category.id"
+        >
+          <g-link :to="category.path">
+            {{ category.title }}
+          </g-link>
         </li>
       </ul>
     </template>
     <template v-if="hasTags">
       <h4>Tags</h4>
       <ul class="list tags">
-        <li v-for="tag in $page.wordPressPost.tags" :key="tag.id" >
-          <g-link :to="tag.path">{{ tag.title }}</g-link>
+        <li
+          v-for="tag in $page.wordPressPost.tags"
+          :key="tag.id"
+        >
+          <g-link :to="tag.path">
+            {{ tag.title }}
+          </g-link>
         </li>
       </ul>
     </template>
@@ -57,7 +67,7 @@ query Post ($path: String!) {
 
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.wordPressPost.title
     }
@@ -65,12 +75,12 @@ export default {
   computed:  {
     hasTags(){
       if ( this.$page.wordPressPost.tags == null ){
-        return false;
+        return false
       } else if ( this.$page.wordPressPost.tags.length > 0 ) {
-        console.log(this.$page.wordPressPost.tags.length);
-        return true;
+        console.log(this.$page.wordPressPost.tags.length)
+        return true
       } else {
-        return false;
+        return false
       }
     }
   }

@@ -5,9 +5,9 @@
         {{dropdownText}}&nbsp; <font-awesome :icon="['fas', 'chevron-down']" :class="dropdownStatus"/>
       </a>
       <transition name="dropdownFade">
-      <div v-show="open" class="px-4 py-2 text-center rounded bg-white border absolute z-50 w-32 shadow-lg">
-         <div v-for="(link, index) in links" :key="index">
-        <g-link class="text-cyan-darker leading-normal no-underline" :to="link.to">{{link.text}}</g-link>
+      <div v-show="open" class="px-4 py-2 rounded bg-white border absolute z-50 w-32 shadow-lg">
+         <div v-for="(link, index) in links" :key="index" class="my-3 mx-2">
+        <g-link class="text-cyan-darker leading-normal no-underline hover:text-magenta" :to="link.to">{{link.text}}</g-link>
          </div>
       </div>
       </transition>
