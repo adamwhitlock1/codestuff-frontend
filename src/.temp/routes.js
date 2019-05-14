@@ -1,5 +1,11 @@
 export default [
   {
+    name: "betapic",
+    path: "/betapic",
+    component: () => import(/* webpackChunkName: "component--betapic" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Betapic.vue"),
+    meta: { isStatic: true }
+  },
+  {
     name: "success",
     path: "/success",
     component: () => import(/* webpackChunkName: "component--success" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Success.vue"),
