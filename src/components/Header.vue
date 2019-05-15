@@ -1,6 +1,5 @@
 <template>
-
-    <div>
+  <div>
     <nav class="flex items-center justify-between flex-wrap bg-cyan w-full z-10 pin-t shadow-lg">
       <div class="flex items-center flex-no-shrink text-white lg:ml-4">
         <g-link
@@ -42,38 +41,52 @@
             <g-link
               class="text-white no-underline"
               to="/about"
-            >about</g-link>
+            >
+              about
+            </g-link>
           </li>
           <li class="p-2 mx-3 nav-link">
-            <dropdown dropdownText="software"
-            :links="[
-              {
-              text: 'designer panel',
-              to: '/designer-panel'
-              },
-              {
-              text: 'betapic',
-              to: '/betapic'
-              },
-            ]"></dropdown>
+            <dropdown
+              dropdown-text="software"
+              :links="[
+                {
+                  text: 'cliplo',
+                  to: '/cliplo'
+                },
+                {
+                  text: 'designer panel',
+                  to: '/designer-panel'
+                },
+                {
+                  text: 'betapic',
+                  to: '/betapic'
+                },
+              ]"
+            />
           </li>
           <li class="p-2 mx-3 nav-link">
             <g-link
               class="text-white no-underline"
               to="/design"
-            >design</g-link>
+            >
+              design
+            </g-link>
           </li>
           <li class="p-2 mx-3 nav-link">
             <g-link
               class="text-white no-underline"
               to="/photography"
-            >photography</g-link>
+            >
+              photography
+            </g-link>
           </li>
           <li class="p-2 mx-3 lg:pb-2 md:pb-12 sm:pb-12 nav-link">
             <g-link
               class="text-white no-underline"
               to="/contact"
-            >hire me</g-link>
+            >
+              hire me
+            </g-link>
           </li>
         </ul>
       </div>

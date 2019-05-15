@@ -125,6 +125,7 @@ let colors = {
 
   'adobe': '#323232',
 
+  'cyan-lightestest': '#bdecfc',
   'cyan-lightest': '#85deff',
   'cyan-lighter': '#2CC7FF',
   'cyan-light': '#00BBFF',
