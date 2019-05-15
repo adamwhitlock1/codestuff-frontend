@@ -7025,6 +7025,10 @@ vue-loader@^15.6.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-masonry-gallery@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-masonry-gallery/-/vue-masonry-gallery-1.1.1.tgz#39bb69212e697995cf378291238e55334e9932f4"
+
 vue-meta@^1.5.8:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-1.6.0.tgz#89b664f6011a207e098e8ba3b9d32e29c819b65d"

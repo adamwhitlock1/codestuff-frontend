@@ -1,8 +1,15 @@
 <template>
-  <Layout>
-    <h2>Graphic Design and Layout</h2>
-    <font-awesome :icon="['fab', 'github']" />
-    <font-awesome :icon="['fab', 'twitter']" />
+  <Layout class="w-full text-center">
+    <h2 class="text-5xl">
+      To view some of my design work:
+    </h2>
+    <a
+      class="btn-default bg-magenta text-white"
+      href="https://dribbble.com/codestuff2"
+      target="_blank"
+    >
+      View My Dribbble Profile
+    </a>
   </Layout>
 </template>
 

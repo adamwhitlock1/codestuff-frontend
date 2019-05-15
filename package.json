@@ -16,6 +16,7 @@
     "D": "^1.0.0",
     "evil-icons": "^1.10.1",
     "gridsome": "^0.5.0",
+    "vue-masonry-gallery": "^1.1.1",
     "vue2-smooth-scroll": "^1.0.5"
   },
   "devDependencies": {
