@@ -47,6 +47,9 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
+  'black-trans-50': 'rgba(0,0,0,.5)',
+  'black-trans-60': 'rgba(0,0,0,.60)',
+  'black-trans-75': 'rgba(0,0,0,.75)',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',

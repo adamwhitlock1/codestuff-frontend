@@ -2,56 +2,49 @@
   <Layout>
     <div
 
-      class="container z-50"
+      class="container mt-12 flex justify-center align-middle items-center object-center"
     >
-      <transition
-        name="fade"
-        appear
-      >
-        <div class="flex">
-          <div class="w-2/3 p-2">
-            <p class="text-center text-white">
-              Software we have built:
-            </p>
-
-            <div class="flex">
-              <g-link
-                class="btn-default text-white text-center no-underline bg-magenta w-1/3 mx-2"
-                to="/cliplo"
-              >
-                cliplo
-              </g-link>
-              <g-link
-                class="btn-default text-black text-center no-underline bg-yellow w-1/3 mx-2"
-                to="/designer-panel"
-              >
-                designer panel
-              </g-link>
-              <g-link
-                class="btn-default text-white text-center no-underline bg-cyan w-1/3 mx-2"
-                to="/betapic"
-              >
-                betapic
-              </g-link>
-            </div>
-          </div>
-
-
-          <div class="w-1/3 p-4">
-            <img
-              class="w-full rounded-lg shadow-lg mt-20"
-              src="@/assets/images/profile.jpg"
-              alt=""
-            >
-          </div>
+      <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow">
+        <h2 class="text-4xl font-light italic mb-0 pb-0 text-white text-center">
+          Unique software &amp; creative resources.
+        </h2>
+        <h3 class="text-2xl tracking-wide text-white text-center mt-0">
+          Building software and web based solutions for developers and designers.
+        </h3>
+        <p class="text-center text-white">
+          Projects:
+        </p>
+        <div class="flex px-12">
+          <g-link
+            class="btn-default text-white text-center no-underline bg-magenta w-1/3 mx-2"
+            to="/cliplo"
+          >
+            cliplo
+          </g-link>
+          <g-link
+            class="btn-default text-black text-center no-underline bg-yellow w-1/3 mx-2"
+            to="/designer-panel"
+          >
+            designer panel
+          </g-link>
+          <g-link
+            class="btn-default text-white text-center no-underline bg-cyan w-1/3 mx-2"
+            to="/betapic"
+          >
+            betapic
+          </g-link>
         </div>
-      </transition>
+      </div>
     </div>
+
+
+
+    <transition
+      name="fade"
+      appear
+    >
+      <div id="three-container" />
     </transition>
-    </div>
-
-
-    <div id="three-container" />
 
 
     <form
@@ -123,7 +116,6 @@
         </button>
       </div>
     </form>
-    </div>
   </Layout>
 </template>
 
@@ -161,11 +153,11 @@ export default {
         this.camera.lookAt( 0, 0, 0 )
 
         this.scene = new THREE.Scene()
-        this.scene.background = new THREE.Color( 0x000000 )
-				// this.scene.fog = new THREE.FogExp2( 0xefd1b5, 0.25 )
+        // this.scene.background = new THREE.Color( 0x000000 )
 
-        this.renderer = new THREE.WebGLRenderer({antialias: true})
+        this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true})
         this.renderer.setSize(container.clientWidth, container.clientHeight)
+        this.renderer.setClearColor( 0x000000, 0 )
 
         let line_mat =[]
         let line_geo = []
@@ -174,7 +166,7 @@ export default {
           let colors = [ '#fff02a', '#00afec', '#ea148c' ]
           line_mat[i] = new THREE.LineBasicMaterial( { color: colors[color_index] } )
           line_geo[i] = new THREE.Geometry()
-          let line_verts = Math.round(this.getRandomArbitrary(2, 20) )
+          let line_verts = Math.round(this.getRandomArbitrary(2, 10) )
 
           for (let v = 0; v < line_verts; v++ ) {
             line_geo[i].vertices.push(new THREE.Vector3( this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )
@@ -183,6 +175,18 @@ export default {
           this.lines[i] = new THREE.Line( line_geo[i], line_mat[i] )
           this.scene.add(this.lines[i])
         }
+
+        var part_geometry = new THREE.BufferGeometry()
+				var part_vertices = []
+				for ( var i = 0; i < 15000; i ++ ) {
+					part_vertices.push( THREE.Math.randFloatSpread( 2000 ) ) // x
+					part_vertices.push( THREE.Math.randFloatSpread( 2000 ) ) // y
+					part_vertices.push( THREE.Math.randFloatSpread( 2000 ) ) // z
+        }
+
+        part_geometry.addAttribute( 'position', new THREE.Float32BufferAttribute( part_vertices, 3 ) )
+				var particles = new THREE.Points( part_geometry, new THREE.PointsMaterial( { color: 0x888888 } ) )
+				this.scene.add( particles )
 
         document.addEventListener( 'mousemove', this.onDocumentMouseMove, false )
         window.addEventListener( 'resize', this.onWindowResize, false )
@@ -210,8 +214,9 @@ export default {
 				this.camera.position.y += ( - (this.mouseY/2) - this.camera.position.y ) * 0.05
         this.camera.lookAt( this.scene.position )
         for (let i = 0; i < this.line_count; i++ ) {
-          this.lines[i].rotation.x += this.getRandomArbitrary(.0001, .003)
-        this.lines[i].rotation.y += this.getRandomArbitrary(.0001, .003)
+          this.lines[i].rotation.x += .001
+        this.lines[i].rotation.y += .0005
+        this.lines[i].rotation.z += -.001
         }
 
         this.renderer.render(this.scene, this.camera)
@@ -231,6 +236,19 @@ export default {
   z-index: -1;
   top: 0px;
   left: 0px;
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(27,3,17,1) 100%);
+  overflow: hidden;
+  animation-name: fade-in;
+  animation-duration: 1.25s;
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.bg-trans-gradient {
+  background: radial-gradient(circle, rgba(0,0,0,.85) 10%, rgba(27,3,17,0.05) 100%);
 }
 
 </style>
