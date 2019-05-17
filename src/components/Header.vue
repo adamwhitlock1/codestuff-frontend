@@ -40,7 +40,7 @@
           <li class="p-2 mx-3 nav-link">
             <g-link
               class="text-white no-underline"
-              to="/"
+              to="/about"
             >
               about
             </g-link>
