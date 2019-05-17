@@ -18,18 +18,26 @@
         <button
           id="nav-toggle"
           class="flex items-center px-3 py-2 bg-transparent active:border-0 focus:border-0 focus:outline-none active:outline-none border-0 mr-4 hover:text-white hover:border-white"
-          @click="showMobileNav"
+          @click="showMobileNav('not shitty')"
         >
           <svg
             class="fill-current text-white h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
-          >
+
+            :style="{'padding-top': isDan + 'px'}"
+>
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
+        {{ isDan }}
+        <input
+          v-model="isDan"
+          type="number"
+        >
       </div>
+
 
       <div
         id="nav-content"
@@ -103,12 +111,14 @@ export default {
   },
   data(){
     return {
-      isMobileNavHidden: true
+      isMobileNavHidden: true,
+      isDan: 100
     }
   },
   methods: {
-    showMobileNav() {
+    showMobileNav(danStatus) {
       this.isMobileNavHidden = !this.isMobileNavHidden
+      this.isDan = danStatus
     }
   }
 }

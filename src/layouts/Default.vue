@@ -1,7 +1,6 @@
 <template>
   <div class="font-sans">
     <Header class="z-50" />
-
     <main>
       <slot />
     </main>

@@ -1,117 +1,121 @@
 <template>
   <Layout>
-    <ClientOnly>
-      <div
+    <div
 
-        class="container mt-12 flex justify-center align-middle items-center object-center"
+      class="container mt-12 flex justify-center align-middle items-center object-center"
+    >
+      <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow">
+        <h2 class="text-4xl font-light italic mb-0 pb-0 text-white text-center">
+          Unique software &amp; creative resources.
+        </h2>
+        <h3 class="text-2xl tracking-wide text-white text-center mt-0">
+          Building applications and web based solutions for developers and designers.
+        </h3>
+        <p class="text-center text-white">
+          some of our projects:
+        </p>
+        <div class="flex px-12">
+          <g-link
+            class="btn-default text-white text-center no-underline bg-magenta w-1/3 mx-2"
+            to="/cliplo"
+          >
+            cliplo
+          </g-link>
+          <g-link
+            class="btn-default text-black text-center no-underline bg-yellow w-1/3 mx-2"
+            to="/designer-panel"
+          >
+            designer panel
+          </g-link>
+          <g-link
+            class="btn-default text-white text-center no-underline bg-cyan w-1/3 mx-2"
+            to="/betapic"
+          >
+            betapic
+          </g-link>
+        </div>
+      </div>
+    </div>
+
+
+
+    <transition
+      name="fade"
+      appear
+    >
+      <div id="three-container" />
+    </transition>
+
+
+    <form
+      hidden
+      name="contact"
+      class="m-10"
+      method="POST"
+      action="/success/"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <p hidden>
+        <label>
+          Don’t fill this out: <input name="bot_field">
+        </label>
+      </p>
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact"
       >
-        <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow">
-          <h2 class="text-4xl font-light italic mb-0 pb-0 text-white text-center">
-            Unique software &amp; creative resources.
-          </h2>
-          <h3 class="text-2xl tracking-wide text-white text-center mt-0">
-            Building software and web based solutions for developers and designers.
-          </h3>
-          <p class="text-center text-white">
-            Projects:
-          </p>
-          <div class="flex px-12">
-            <g-link
-              class="btn-default text-white text-center no-underline bg-magenta w-1/3 mx-2"
-              to="/cliplo"
-            >
-              cliplo
-            </g-link>
-            <g-link
-              class="btn-default text-black text-center no-underline bg-yellow w-1/3 mx-2"
-              to="/designer-panel"
-            >
-              designer panel
-            </g-link>
-            <g-link
-              class="btn-default text-white text-center no-underline bg-cyan w-1/3 mx-2"
-              to="/betapic"
-            >
-              betapic
-            </g-link>
-          </div>
+
+      <div class="flex flex-row">
+        <div class="w-1/2">
+          <label class="ml-6 w-1/3">
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-2/3 p-2 px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-2xl mx-2"
+          >
+        </div>
+
+        <div class="w-1/2">
+          <label class="ml-6 w-1/3">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-2/3 p-2 px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-2xl mx-2"
+          >
         </div>
       </div>
 
+      <div class="flex flex-row mx-6">
+        <div class="w-full mt-6">
+          <p class="w-full">
+            Message
+          </p>
+          <textarea
+            class="rounded-lg w-full font-sans text-2xl p-3 border-0 text-cyan-dark shadow-md"
+            required
+            rows="8"
+            name="message"
+          />
+        </div>
+      </div>
 
-      <div id="three-container" />
-
-
-      <form
-        hidden
-        name="contact"
-        class="m-10"
-        method="POST"
-        action="/success/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot_field">
-          </label>
-        </p>
-        <input
-          type="hidden"
-          name="form-name"
-          value="contact"
+      <div class="flex flex-row mt-4 justify-end">
+        <button
+          class="btn-default bg-cyan-darkest text-white mr-6"
+          type="submit"
         >
-
-        <div class="flex flex-row">
-          <div class="w-1/2">
-            <label class="ml-6 w-1/3">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              required
-              class="w-2/3 p-2 px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-2xl mx-2"
-            >
-          </div>
-
-          <div class="w-1/2">
-            <label class="ml-6 w-1/3">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              required
-              class="w-2/3 p-2 px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-2xl mx-2"
-            >
-          </div>
-        </div>
-
-        <div class="flex flex-row mx-6">
-          <div class="w-full mt-6">
-            <p class="w-full">
-              Message
-            </p>
-            <textarea
-              class="rounded-lg w-full font-sans text-2xl p-3 border-0 text-cyan-dark shadow-md"
-              required
-              rows="8"
-              name="message"
-            />
-          </div>
-        </div>
-
-        <div class="flex flex-row mt-4 justify-end">
-          <button
-            class="btn-default bg-cyan-darkest text-white mr-6"
-            type="submit"
-          >
-            Send me a message :)
-          </button>
-        </div>
-      </form>
-    </ClientOnly>
+          Send me a message :)
+        </button>
+      </div>
+    </form>
   </Layout>
 </template>
 
@@ -149,26 +153,41 @@ export default {
         this.camera.lookAt( 0, 0, 0 )
 
         this.scene = new THREE.Scene()
-        // this.scene.background = new THREE.Color( 0x000000 )
 
+        // renderer needs to use alpha so it can have transparent background
         this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true})
-        this.renderer.setSize(container.clientWidth, container.clientHeight)
+
+        // make the renderer background transparent
         this.renderer.setClearColor( 0x000000, 0 )
+
+        this.renderer.setSize(container.clientWidth, container.clientHeight)
 
         let line_mat =[]
         let line_geo = []
+
+        // loop to create each line and determine its color and vertices
         for (let i = 0; i < this.line_count; i++ ) {
+
+          // get a random number between 0-2 to determine which color to use
           let color_index = Math.round(this.getRandomArbitrary(0, 2) )
           let colors = [ '#fff02a', '#00afec', '#ea148c' ]
+
+          // create line material and color it
           line_mat[i] = new THREE.LineBasicMaterial( { color: colors[color_index] } )
           line_geo[i] = new THREE.Geometry()
+
+          // randomly generate number of vertices between 2 and 10
           let line_verts = Math.round(this.getRandomArbitrary(2, 10) )
 
           for (let v = 0; v < line_verts; v++ ) {
+            // randomly generate a vector x, y, and z coordinate between -100 - 100
             line_geo[i].vertices.push(new THREE.Vector3( this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )
           }
 
+          // create the actual line with geometry and material
           this.lines[i] = new THREE.Line( line_geo[i], line_mat[i] )
+
+          // add line to scene
           this.scene.add(this.lines[i])
         }
 
@@ -210,7 +229,7 @@ export default {
 				this.camera.position.y += ( - (this.mouseY/2) - this.camera.position.y ) * 0.05
         this.camera.lookAt( this.scene.position )
         for (let i = 0; i < this.line_count; i++ ) {
-          this.lines[i].rotation.x += .001
+        this.lines[i].rotation.x += .001
         this.lines[i].rotation.y += .0005
         this.lines[i].rotation.z += -.001
         }
