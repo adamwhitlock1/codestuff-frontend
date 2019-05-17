@@ -184,6 +184,9 @@
 <script>
 import ContactForm from "../components/ContactForm"
 export default {
+  metaInfo: {
+    title: 'Cliplo clipboard manager'
+  },
 components: {
   ContactForm
 }

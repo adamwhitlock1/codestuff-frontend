@@ -16,6 +16,8 @@
     "D": "^1.0.0",
     "evil-icons": "^1.10.1",
     "gridsome": "^0.5.0",
+    "three": "^0.104.0",
+    "three-full": "^17.1.0",
     "vue-masonry-gallery": "^1.1.1",
     "vue2-smooth-scroll": "^1.0.5"
   },

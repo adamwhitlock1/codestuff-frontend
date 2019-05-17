@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex items-center justify-between flex-wrap bg-cyan w-full z-10 pin-t shadow-lg">
+    <nav class="flex items-center justify-between flex-wrap bg-cyan w-full z-50 pin-t shadow-lg">
       <div class="flex items-center flex-no-shrink text-white lg:ml-4">
         <g-link
           class="text-white no-underline hover:text-white hover:no-underline"

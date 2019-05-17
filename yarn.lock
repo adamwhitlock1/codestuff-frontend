@@ -6662,6 +6662,14 @@ terser@^3.16.1:
     source-map "~0.6.1"
     source-map-support "~0.5.10"
 
+three-full@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/three-full/-/three-full-17.1.0.tgz#ecab0ff39c76c94530cda50d40fb9d66b2141701"
+
+three@^0.104.0:
+  version "0.104.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.104.0.tgz#9ad1da492153b753a89e0df066631215bd9d9087"
+
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"

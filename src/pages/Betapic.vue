@@ -37,6 +37,9 @@
 
 <script>
   export default {
+    metaInfo: {
+    title: 'Betapic photo search'
+  }
 
   }
 </script>

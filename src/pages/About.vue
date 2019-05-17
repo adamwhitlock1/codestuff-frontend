@@ -1,7 +1,8 @@
 <template>
   <Layout>
-    <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <p class=" text-2xl mt-2 text-black">
+      Adam Whitlock is a creative developer living in the mountains of Colorado. He believes in creating clean, moderns, and usable design for the web, and in giving back to his fellow developers. Currently working as a lead developer at Madwire Media, teaching Advanced Photoshop, and Web Design at Front Range Community College.
+    </p>
   </Layout>
 </template>
 

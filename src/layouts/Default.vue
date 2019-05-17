@@ -1,11 +1,9 @@
 <template>
   <div class="font-sans">
     <Header />
-    <transition name="fade" appear>
-      <main>
-        <slot/>
-      </main>
-    </transition>
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
@@ -38,13 +36,10 @@ img {
 
 .fade-enter-active {
   transition: all 1.1s;
-  transform: translateY(0px);
-
 }
 
 .fade-enter {
   opacity: 0;
-  transform: translateY(30px);
 }
 
 </style>
