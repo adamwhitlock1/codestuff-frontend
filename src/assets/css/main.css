@@ -14,7 +14,7 @@ body {
 }
 
 .nav-link, a {
-  transition: .4s;
+  transition: transform .4s;
 }
 
 .nav-link:hover {
