@@ -45,7 +45,9 @@ export default {
   props: {
     links: {
       type: Array,
-      default: [{text: "no text set", to: "/"}]
+      default() {
+        return [{text: "no text set", to: "/"}]
+       }
     },
     dropdownText: {
       type: String,

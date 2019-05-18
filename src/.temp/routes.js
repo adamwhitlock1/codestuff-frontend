@@ -1,14 +1,14 @@
 export default [
   {
-    name: "photography",
-    path: "/photography",
-    component: () => import(/* webpackChunkName: "component--photography" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Photography.vue"),
-    meta: { isStatic: true }
-  },
-  {
     name: "success",
     path: "/success",
     component: () => import(/* webpackChunkName: "component--success" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Success.vue"),
+    meta: { isStatic: true }
+  },
+  {
+    name: "photography",
+    path: "/photography",
+    component: () => import(/* webpackChunkName: "component--photography" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Photography.vue"),
     meta: { isStatic: true }
   },
   {
