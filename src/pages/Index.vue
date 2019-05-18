@@ -4,7 +4,7 @@
 
       class="container mt-12 flex justify-center align-middle items-center object-center"
     >
-      <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow">
+      <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2">
         <h2 class="text-4xl font-light italic mb-0 pb-0 text-white text-center">
           Unique software &amp; creative resources.
         </h2>
@@ -14,21 +14,21 @@
         <p class="text-center text-white">
           some of our projects:
         </p>
-        <div class="flex px-12">
+        <div class="flex px-10">
           <g-link
-            class="btn-default text-white text-center no-underline bg-magenta w-1/3 mx-2"
+            class="btn-default text-magenta hover:bg-magenta hover:text-white border border-solid border-magenta text-center no-underline bg-transparent w-1/3 mx-10"
             to="/cliplo"
           >
             cliplo
           </g-link>
           <g-link
-            class="btn-default text-black text-center no-underline bg-yellow w-1/3 mx-2"
+            class="btn-default border border-yellow border-solid  hover:bg-yellow hover:text-black text-yellow text-center no-underline bg-transparent w-1/3 mx-10"
             to="/designer-panel"
           >
             designer panel
           </g-link>
           <g-link
-            class="btn-default text-white text-center no-underline bg-cyan w-1/3 mx-2"
+            class="btn-default text-cyan border border-solid  hover:bg-cyan hover:text-white text-center no-underline border-cyan bg-transparent w-1/3 mx-10"
             to="/betapic"
           >
             betapic
@@ -46,17 +46,17 @@
       <div id="three-container" />
     </transition>
     <div class="pin-b pin-r absolute m-4 text-white flex h-8 align-middle">
-      <p class="mx-2 align-middle self-center">
+      <p class="text-xs mx-2 align-middle self-center">
         controls
       </p>
       <button
-        class="btn-xs bg-transparent text-white border border-transparent"
+        class="btn-xs bg-transparent text-white border border-transparent mx-1"
         @click="addLine"
       >
         +
       </button>
       <button
-        class="btn-xs bg-transparent text-white border border-transparent"
+        class="btn-xs bg-transparent text-white border border-transparent mx-1"
         @click="removeLine"
       >
         -
