@@ -97,7 +97,7 @@
         .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
         .join('&')
       },
-      handleSubmit(e) {
+      handleSubmit() {
         fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -106,7 +106,7 @@
           }),
         })
         .then(() => this.$router.push('/success'))
-        .catch(error => alert(error))
+        .catch(e => alert(e))
       }
     }
   }

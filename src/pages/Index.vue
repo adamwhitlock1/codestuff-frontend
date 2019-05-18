@@ -133,25 +133,38 @@ export default {
       loader: null,
       lines:[],
       line_count: 15,
-      windowHalfX: window.innerWidth / 2,
-      windowHalfY: window.innerHeight / 2,
       mouseX: null,
       mouseY: null
 
     }
   },
+    computed: {
+      windowHalfX(){
+        if (typeof window !== "undefined") {
+        return window.innerWidth / 2
+        } else {
+          return false
+        }
+      },
+      windowHalfY(){
+        if (typeof window !== "undefined") {
+        return window.innerHeight / 2
+        } else {
+          return false
+        }
+      },
+    },
   mounted() {
       this.init()
       this.animate()
   },
   methods: {
     init: function() {
+      if (typeof window !== "undefined") {
         let container = document.getElementById('three-container')
-
         this.camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 1, 500)
         this.camera.position.set( 0, 0, 100 )
         this.camera.lookAt( 0, 0, 0 )
-
         this.scene = new THREE.Scene()
 
         // renderer needs to use alpha so it can have transparent background
@@ -191,6 +204,7 @@ export default {
           this.scene.add(this.lines[i])
         }
 
+
         var part_geometry = new THREE.BufferGeometry()
 				var part_vertices = []
 				for ( var i = 0; i < 15000; i ++ ) {
@@ -206,35 +220,39 @@ export default {
         document.addEventListener( 'mousemove', this.onDocumentMouseMove, false )
         window.addEventListener( 'resize', this.onWindowResize, false )
         container.appendChild(this.renderer.domElement)
-
-
+      }
     },
     onWindowResize() {
-				this.windowHalfX = window.innerWidth / 2
+      if (typeof window !== "undefined") {
+        this.windowHalfX = window.innerWidth / 2
 				this.windowHalfY = window.innerHeight / 2
 				this.camera.aspect = window.innerWidth / window.innerHeight
 				this.camera.updateProjectionMatrix()
 				this.renderer.setSize( window.innerWidth, window.innerHeight )
-			},
-    	onDocumentMouseMove( event ) {
-				this.mouseX = ( event.clientX - this.windowHalfX )
-				this.mouseY = ( event.clientY - this.windowHalfY )
-			},
+      }
+		},
+    onDocumentMouseMove( event ) {
+      if (typeof window !== "undefined") {
+        this.mouseX = ( event.clientX - this.windowHalfX )
+        this.mouseY = ( event.clientY - this.windowHalfY )
+      }
+    },
     getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min
     },
     animate: function() {
-        requestAnimationFrame(this.animate)
-        this.camera.position.x += ( (this.mouseX/2) - this.camera.position.x ) * 0.05
-				this.camera.position.y += ( - (this.mouseY/2) - this.camera.position.y ) * 0.05
-        this.camera.lookAt( this.scene.position )
-        for (let i = 0; i < this.line_count; i++ ) {
-        this.lines[i].rotation.x += .001
-        this.lines[i].rotation.y += .0005
-        this.lines[i].rotation.z += -.001
+        if (typeof window !== "undefined") {
+          requestAnimationFrame(this.animate)
+          this.camera.position.x += ( (this.mouseX/2) - this.camera.position.x ) * 0.05
+          this.camera.position.y += ( - (this.mouseY/2) - this.camera.position.y ) * 0.05
+          this.camera.lookAt( this.scene.position )
+          for (let i = 0; i < this.line_count; i++ ) {
+            this.lines[i].rotation.x += .001
+            this.lines[i].rotation.y += .0005
+            this.lines[i].rotation.z += -.001
+          }
+          this.renderer.render(this.scene, this.camera)
         }
-
-        this.renderer.render(this.scene, this.camera)
     }
   },
   metaInfo: {
