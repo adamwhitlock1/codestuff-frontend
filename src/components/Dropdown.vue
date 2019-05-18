@@ -9,6 +9,7 @@
         {{ dropdownText }}&nbsp; <font-awesome
           :icon="['fas', 'chevron-down']"
           :class="dropdownStatus"
+          class="dropdown-chevron"
         />
       </a>
       <transition name="dropdownFade">
@@ -82,6 +83,11 @@ export default {
 .open {
   transform: scaleY(-1);
 }
+
+.dropdown-chevron {
+  width: 16px !important;
+}
+
 .fa-chevron-down {
   margin-bottom: -2px;
   transition: .3s;

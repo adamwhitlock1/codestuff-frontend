@@ -7,7 +7,7 @@
 
 .btn-default {
   @apply rounded-full font-sans no-underline cursor-pointer shadow px-6 py-3;
-  transition: .3s;
+  transition: background-color .3s, transform .3s;
 }
 
 .btn-default:hover {
