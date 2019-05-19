@@ -45,7 +45,17 @@
     >
       <div id="three-container" />
     </transition>
-    <div class="pin-b pin-r absolute m-4 text-white flex h-8 align-middle">
+    <div
+      classs="pin-b pin-r absolute mr-12 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
+      :class="{'opacity-100': showing_line_count }"
+    >
+      Lines: {{ line_count }}
+    </div>
+    <div
+      class="pin-b pin-r absolute m-4 text-white flex h-8 align-middle"
+      @mouseenter="showing_line_count = true"
+      @mouseleave="showing_line_count = false"
+    >
       <p class="text-xs mx-2 align-middle self-center">
         controls
       </p>
@@ -80,7 +90,8 @@ export default {
       lines:[],
       line_count: 15,
       mouseX: null,
-      mouseY: null
+      mouseY: null,
+      showing_line_count: false
 
     }
   },
@@ -183,6 +194,7 @@ export default {
             line_geo.vertices.push(new THREE.Vector3( this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )
           }
           let line = new THREE.Line( line_geo, line_mat )
+          line.name = "line_" + (this.line_count -1)
           this.lines.push(line)
           this.scene.add(line)
           this.renderer.render(this.scene, this.camera)
@@ -190,6 +202,7 @@ export default {
     removeLine(){
           this.line_count = this.line_count - 1
           var selectedObject = this.scene.getObjectByName("line_" + (this.line_count))
+          this.lines.pop()
           console.log(this.line_count)
           this.scene.remove( selectedObject )
           this.renderer.render(this.scene, this.camera)
