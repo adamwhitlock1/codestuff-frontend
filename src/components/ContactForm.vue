@@ -25,7 +25,7 @@
 
       <div class="flex flex-row">
         <div class="w-1/2">
-          <label class="ml-6 w-1/3">
+          <label class="ml-6 w-1/3 text-lg">
             Name
           </label>
           <input
@@ -39,7 +39,7 @@
         </div>
 
         <div class="w-1/2">
-          <label class="ml-6 w-1/3">
+          <label class="ml-6 w-1/3 text-lg">
             Email
           </label>
           <input
@@ -55,7 +55,7 @@
 
       <div class="flex flex-row mx-6">
         <div class="w-full mt-6">
-          <p class="w-full">
+          <p class="w-full text-lg">
             Message
           </p>
           <textarea
@@ -71,7 +71,7 @@
 
       <div class="flex flex-row mt-4 justify-end">
         <button
-          class="btn-default bg-cyan-darkest text-white mr-6"
+          class="btn-default bg-black border-0 text-white text-lg mr-6"
           type="submit"
         >
           Send me a message :)
