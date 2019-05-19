@@ -88,7 +88,7 @@ export default {
       mesh: null,
       loader: null,
       lines:[],
-      line_count: 15,
+      line_count: 40,
       mouseX: null,
       mouseY: null,
       showing_line_count: false
@@ -120,7 +120,7 @@ export default {
       if (typeof window !== "undefined") {
         let container = document.getElementById('three-container')
         this.camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 1, 500)
-        this.camera.position.set( 0, 0, 100 )
+        this.camera.position.set( 0, 0, 125 )
         this.camera.lookAt( 0, 0, 0 )
         this.scene = new THREE.Scene()
 
@@ -146,12 +146,12 @@ export default {
           line_mat[i] = new THREE.LineBasicMaterial( { color: colors[color_index] } )
           line_geo[i] = new THREE.Geometry()
 
-          // randomly generate number of vertices between 2 and 10
-          let line_verts = Math.round(this.getRandomArbitrary(2, 10) )
+          // randomly generate number of vertices between 1 and 15
+          let line_verts = Math.round(this.getRandomArbitrary(1, 8) )
 
           for (let v = 0; v < line_verts; v++ ) {
             // randomly generate a vector x, y, and z coordinate between -100 - 100
-            line_geo[i].vertices.push(new THREE.Vector3( this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )
+            line_geo[i].vertices.push(new THREE.Vector3( this.getRandomArbitrary(-75, 50), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )
           }
 
           // create the actual line with geometry and material
@@ -188,7 +188,7 @@ export default {
           let colors = [ '#fff02a', '#00afec', '#ea148c' ]
           let line_mat = new THREE.LineBasicMaterial( { color: colors[color_index] } )
           let line_geo = new THREE.Geometry()
-          let line_verts = Math.round(this.getRandomArbitrary(2, 10) )
+          let line_verts = Math.round(this.getRandomArbitrary(2, 25) )
           for (let v = 0; v < line_verts; v++ ) {
             // randomly generate a vector x, y, and z coordinate between -100 - 100
             line_geo.vertices.push(new THREE.Vector3( this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100), this.getRandomArbitrary(-100, 100)) )

@@ -25,7 +25,6 @@
             >
               <font-awesome
                 :icon="['fab', 'github']"
-                :class="dropdownStatus"
                 class="text-xl py-2 h-4 mt-1"
               />
             </a>
@@ -36,7 +35,6 @@
             >
               <font-awesome
                 :icon="['fab', 'twitter']"
-                :class="dropdownStatus"
                 class="text-xl py-2 h-4 mt-1"
               />
             </a>
@@ -47,7 +45,6 @@
             >
               <font-awesome
                 :icon="['fab', 'dribbble']"
-                :class="dropdownStatus"
                 class="text-xl py-2 h-4 mt-1"
               />
             </a>

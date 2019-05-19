@@ -1236,6 +1236,10 @@ babylon@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
 
+baguettebox.js@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/baguettebox.js/-/baguettebox.js-1.11.0.tgz#38b4e478dc91cad9e19060a15b19aae94724728d"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -7032,10 +7036,6 @@ vue-loader@^15.6.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
-
-vue-masonry-gallery@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/vue-masonry-gallery/-/vue-masonry-gallery-1.1.1.tgz#39bb69212e697995cf378291238e55334e9932f4"
 
 vue-meta@^1.5.8:
   version "1.6.0"

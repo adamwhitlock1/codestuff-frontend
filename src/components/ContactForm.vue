@@ -23,9 +23,9 @@
         value="contact"
       >
 
-      <div class="flex flex-row">
-        <div class="w-1/2">
-          <label class="ml-6 w-1/3 text-lg">
+      <div class="block md:flex flex-row">
+        <div class="mt-6 w-full md:w-1/2">
+          <label class="ml-6 w-1/3">
             Name
           </label>
           <input
@@ -38,15 +38,15 @@
           >
         </div>
 
-        <div class="w-1/2">
-          <label class="ml-6 w-1/3 text-lg">
+        <div class="mt-6 w-full md:w-1/2">
+          <label class="ml-6 w-1/3">
             Email
           </label>
           <input
             v-model="formData.email"
             type="email"
             name="email"
-            placeholder="some-awesome@email.com"
+            placeholder="awesome@email.com"
             required
             class="w-2/3 p-2 px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-xl mx-2"
           >
@@ -55,7 +55,7 @@
 
       <div class="flex flex-row mx-6">
         <div class="w-full mt-6">
-          <p class="w-full text-lg">
+          <p class="w-full">
             Message
           </p>
           <textarea
@@ -69,9 +69,9 @@
         </div>
       </div>
 
-      <div class="flex flex-row mt-4 justify-end">
+      <div class="block md:flex w-full flex-row m-4 justify-end">
         <button
-          class="btn-default bg-black border-0 text-white text-lg mr-6"
+          class="btn-default w-full mr-6 md:w-1/2 bg-black border-0 text-white text-lg"
           type="submit"
         >
           Send me a message :)
