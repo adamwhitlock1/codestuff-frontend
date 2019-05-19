@@ -46,10 +46,10 @@
       <div id="three-container" />
     </transition>
     <div
-      classs="pin-b pin-r absolute mr-12 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
+      class="pin-b pin-r absolute mr-8 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
       :class="{'opacity-100': showing_line_count }"
     >
-      Lines: {{ line_count }}
+      lines: {{ line_count }}
     </div>
     <div
       class="pin-b pin-r absolute m-4 text-white flex h-8 align-middle"
