@@ -8,7 +8,7 @@
           </p>
 
           <div class="flex">
-            <h3 class="text-4xl mt-2 mb-0 text-black">
+            <h3 class="text-4xl mt-2 mb-0 text-black italic">
               Codestuff.io is created by Adam Whitlock
             </h3>
           </div>
@@ -18,6 +18,17 @@
             </p>
           </div>
           <div class="flex w-full align-middle justify-end">
+            <a
+              href="https://github.com/adamwhitlock1"
+              target="_blank"
+              class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-yellow hover:text-black mx-3"
+            >
+              <font-awesome
+                :icon="['fab', 'github']"
+                :class="dropdownStatus"
+                class="text-xl py-2 h-4 mt-1"
+              />
+            </a>
             <a
               href="https://twitter.com/codestuff2"
               target="_blank"
@@ -36,17 +47,6 @@
             >
               <font-awesome
                 :icon="['fab', 'dribbble']"
-                :class="dropdownStatus"
-                class="text-xl py-2 h-4 mt-1"
-              />
-            </a>
-            <a
-              href="https://twitter.com/codestuff2"
-              target="_blank"
-              class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-yellow hover:text-black mx-3"
-            >
-              <font-awesome
-                :icon="['fab', 'twitter']"
                 :class="dropdownStatus"
                 class="text-xl py-2 h-4 mt-1"
               />

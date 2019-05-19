@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faTwitter, faFacebook, faDribbble } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter, faFacebook, faDribbble, faGrithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -9,7 +9,8 @@ library.add(
   faTwitter,
   faChevronDown,
   faFacebook,
-  faDribbble
+  faDribbble,
+  faGithub
   )
 
 export default function(Vue) {
