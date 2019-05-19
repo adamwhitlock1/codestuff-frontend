@@ -20,7 +20,8 @@
 }
 
 .btn-xs:hover {
-  @apply border border-white
+  @apply border border-white;
+  transform: translateY(-2px);
 }
 
 body {

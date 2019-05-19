@@ -1,11 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter, faFacebook, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 
-library.add(faGithub, faTwitter)
-library.add(faChevronDown)
+library.add(
+  faGithub,
+  faTwitter,
+  faChevronDown,
+  faFacebook,
+  faDribbble
+  )
 
 export default function(Vue) {
   Vue.component('font-awesome', FontAwesomeIcon)
