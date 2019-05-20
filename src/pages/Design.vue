@@ -20,7 +20,7 @@
 
     <div class="gallery -mt-4 mb-16">
       <a
-        href="/assets/static/src/assets/images/wits-beaux-ads.jpg"
+        href="/images/wits-beaux-ads.jpg"
         data-caption="Wits &amp; Beaux Digital Advertisements"
       >
         <g-image
@@ -30,7 +30,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/fresh-press.jpg"
+        href="/images/fresh-press.jpg"
         data-caption="Fresh Press CD Single Sleeve"
       >
         <g-image
@@ -40,7 +40,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/ninjas.jpg"
+        href="/images/ninjas.jpg"
         data-caption="Design Ninjas Logo"
       >
         <g-image
@@ -50,7 +50,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/jazz.jpg"
+        href="/images/jazz.jpg"
         data-caption="Greeley Jazz Festival Print Layouts"
       >
         <g-image
@@ -60,7 +60,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/logos.jpg"
+        href="/images/logos.jpg"
         data-caption="Logo Concepts"
       >
         <g-image
@@ -70,7 +70,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/once-ads.jpg"
+        href="/images/once-ads.jpg"
         data-caption="Once Upond a Child Print Ads"
       >
         <g-image
@@ -81,7 +81,7 @@
 
 
       <a
-        href="/assets/static/src/assets/images/yunique-logos.jpg"
+        href="/images/yunique-logos.jpg"
         data-caption="Yunique Logos"
       >
         <g-image
@@ -91,7 +91,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/pursuit-ads.jpg"
+        href="/images/pursuit-ads.jpg"
         data-caption="Pursuit Fitness Digital Ads"
       >
         <g-image
@@ -101,7 +101,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/hoppy-exp.jpg"
+        href="/images/hoppy-exp.jpg"
         data-caption="Hoppy Accident Beer Logo"
       >
         <g-image
@@ -111,7 +111,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/smash-test.jpg"
+        href="/images/smash-test.jpg"
         data-caption="Smash Test Dummy Logo"
       >
         <g-image
@@ -121,7 +121,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/protest-porter.jpg"
+        href="/images/protest-porter.jpg"
         data-caption="Protest Porter Logo"
       >
         <g-image
@@ -131,7 +131,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/world-beverage.jpg"
+        href="/images/world-beverage.jpg"
         data-caption="World Beverage Website Mockup"
       >
         <g-image
@@ -145,6 +145,7 @@
 
 <script>
   import baguetteBox from 'baguettebox.js'
+  import 'baguettebox.js/dist/baguetteBox.min.css'
   export default {
     metaInfo: {
       title: 'Design Work'

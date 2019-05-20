@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter, faFacebook, faDribbble, faGrithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import 'baguettebox.js/dist/baguetteBox.min.css';
+import 'baguettebox.js/dist/baguetteBox.min.css'
 
 
 library.add(

@@ -15,7 +15,7 @@
     </a>
     <div class="gallery -mt-4 mb-16">
       <a
-        href="/assets/static/src/assets/images/Firebird.jpg"
+        href="/images/Firebird.jpg"
         data-caption="Firebird"
       >
         <g-image
@@ -25,7 +25,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/adam-whitlock-2.jpg"
+        href="/images/adam-whitlock-2.jpg"
         data-caption="4th of July"
       >
         <g-image
@@ -35,7 +35,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/pinstripe.jpg"
+        href="/images/pinstripe.jpg"
         data-caption="Pinstripe"
       >
         <g-image
@@ -45,7 +45,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/FlyOnPurpleFlower.jpg"
+        href="/images/FlyOnPurpleFlower.jpg"
         data-caption="Momentary Pause"
       >
         <g-image
@@ -55,7 +55,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/adam-whitlock-5.jpg"
+        href="/images/adam-whitlock-5.jpg"
         data-caption="Frontrange Rainbow"
       >
         <g-image
@@ -65,7 +65,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/Frog1.jpg"
+        href="/images/Frog1.jpg"
         data-caption="Emerald Buoyancy"
       >
         <g-image
@@ -75,7 +75,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/Drop.jpg"
+        href="/images/Drop.jpg"
         data-caption="Hesitant Drop"
       >
         <g-image
@@ -85,7 +85,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/ram.jpg"
+        href="/images/ram.jpg"
         data-caption="What are you lookin at?"
       >
         <g-image
@@ -95,7 +95,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/hopper1.jpg"
+        href="/images/hopper1.jpg"
         data-caption="Backyard Hopper"
       >
         <g-image
@@ -105,7 +105,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/post-paradise-1.jpg"
+        href="/images/post-paradise-1.jpg"
         data-caption="Post Paradise 1"
       >
         <g-image
@@ -115,7 +115,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/post-paradise-2.jpg"
+        href="/images/post-paradise-2.jpg"
         data-caption="Post Paradise 2"
       >
         <g-image
@@ -125,7 +125,7 @@
       </a>
 
       <a
-        href="/assets/static/src/assets/images/ladybug1.jpg"
+        href="/images/ladybug1.jpg"
         data-caption="Lady on the Leaf"
       >
         <g-image
@@ -140,6 +140,7 @@
 <script>
 
 import baguetteBox from 'baguettebox.js'
+import 'baguettebox.js/dist/baguetteBox.min.css'
 
   export default {
       metaInfo: {
