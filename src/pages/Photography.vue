@@ -140,7 +140,6 @@
 <script>
 
 import baguetteBox from 'baguettebox.js'
-import 'baguettebox.js/dist/baguetteBox.min.css'
 
   export default {
       metaInfo: {
