@@ -24,11 +24,11 @@
         </div>
 
         <div class="w-2/3 pr-4">
-          <img
+          <g-image
             class="w-full"
             src="@/assets/images/betapic-screens-white.jpg"
             alt=""
-          >
+          />
         </div>
       </div>
     </Layout>

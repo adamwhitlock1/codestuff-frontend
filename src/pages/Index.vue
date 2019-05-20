@@ -80,6 +80,9 @@
 import * as THREE from 'three'
 
 export default {
+    metaInfo: {
+    title: 'Welcome to Codestuff'
+  },
   data(){
     return {
       camera: null,

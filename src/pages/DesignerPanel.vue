@@ -22,11 +22,11 @@
         </div>
       </div>
       <div class="text-white text-center bg-adobe p-4 rounded shadow-deep -ml-6 w-2/3 ">
-        <img
+        <g-image
           class="w-full"
           src="@/assets/images/designer_panel.jpg"
           alt=""
-        >
+        />
       </div>
     </div>
 
@@ -36,10 +36,10 @@
       class="flex flex-row items-center py-6 px-12 mt-10"
     >
       <div class="text-white text-center bg-adobe w-1/6 rounded shadow-deep p-10 z-50">
-        <img
+        <g-image
           src="@/assets/images/designer_panel_1_utils.jpg"
           alt=""
-        >
+        />
       </div>
 
       <div class="text-white bg-magenta w-5/6 py-1 pl-12 pr-6 -ml-6 rounded shadow-md">
@@ -177,10 +177,10 @@
 
       <!-- START 1/6 COLUMN -->
       <div class="text-white text-center bg-adobe w-1/6 -ml-6 rounded shadow-deep p-10 m-3 z-50">
-        <img
+        <g-image
           src="@/assets/images/designer_panel_2.jpg"
           alt=""
-        >
+        />
       </div>
     </div>
 
@@ -192,10 +192,10 @@
     >
       <!-- START 1/6 COLUMN -->
       <div class="text-white text-center bg-adobe w-2/3 -mr-6 rounded shadow-deep p-10 m-3 z-50">
-        <img
+        <g-image
           src="@/assets/images/designer_panel_3_edits_all.jpg"
           alt=""
-        >
+        />
       </div>
       <!-- START 5/6 COLUMN -->
       <div class="text-white bg-black w-1/3 py-1 pl-12 pr-6 rounded shadow-md">

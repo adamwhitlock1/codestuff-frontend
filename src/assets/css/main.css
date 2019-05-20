@@ -46,3 +46,12 @@ h4, h5, h6, .h4, .h5, .h6 {
   font-style: italic;
   font-weight: 400;
 }
+
+/* gallery styles for design and photo pages */
+.img-gallery {
+  transition: .4s;
+}
+
+.img-gallery:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}

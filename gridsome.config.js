@@ -8,8 +8,8 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome',
-  siteDescription: 'A WordPress starter for Gridsome',
+  siteName: 'Codestuff',
+  siteDescription: 'Software Development, Design, and Photography',
   css: {
     loaderOptions: {
       postcss: {

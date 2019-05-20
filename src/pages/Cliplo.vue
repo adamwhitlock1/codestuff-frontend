@@ -2,11 +2,11 @@
   <Layout>
     <div class="flex items-center flex-row lg:py-6 md:mt-6 md:px-12">
       <div class="bg-transparent hidden md:block  -mr-10 w-1/2 z-50">
-        <img
+        <g-image
           class="w-full"
           src="@/assets/images/cliplo-main-history-trans.png"
           alt=""
-        >
+        /></g-image>
       </div>
       <div class="text-white md:shadow-md text-center p-2 md:p-10 md:pl-16 bg-white rounded md:w-1/2">
         <h4 class="text-4xl text-black m-0 mb-3">
@@ -17,11 +17,11 @@
           vue, nuxt, express, lodash, axios, vuex, electron, nedb, carbon cli, tailwind.
         </p>
         <div class="flex-row  w-full">
-          <img
+          <g-image
             class="relative w-5/6 visible md:hidden float-right -mt-8 lg:-mr-24 -mb-12 z-50"
             src="@/assets/images/cliplo-main-history-trans.png"
             alt=""
-          >
+          /></g-image>
         </div>
         <p class="text-sm md:text-base md:text-cyan md:bg-transparent rounded-lg md:pt-2 py-10 mr-12 pt-12 inline-block ml-4 -mb-20 pt-6 px-4 px-10 pb-14 bg-cyan text-white">
           A modern clipboard manager that is built for developer productivity. Access your clipboard history even after your computer restarts. Share code snippets instantly on carbon.now.sh, and archive your snippets for long term usage. Stay on task and remember to take breaks throughout the day with a built in pomodoro timer.
@@ -76,10 +76,10 @@
       </div>
 
       <div class="text-white text-center bg-transparent md:w-3/5 -ml-20 mr-4 md:mx-0 md:ml-0 -mt-8 -mb-8 z-50">
-        <img
+        <g-image
           src="@/assets/images/how-it-works-trans.png"
           alt=""
-        >
+        /></g-image>
       </div>
     </div>
 
@@ -89,11 +89,11 @@
       class="block md:flex flex-row items-center py-6 pt-0 md:mt-12 md:px-12 mb-12"
     >
       <div class="hidden md:inline-block text-white text-center bg-transparent w-full lg:w-2/3 -mr-10 pt-12 mb-0 ld:m-3">
-        <img
+        <g-image
           src="@/assets/images/carbon-cliplo.jpg"
           alt=""
           class="w-full hidden md:inline-block"
-        >
+        /></g-image>
       </div>
       <!-- START TEXT SECTION -->
       <div class="block text-white bg-yellow w-5/6 md:w-1/3 py-1 md:pr-10 md:pl-10 pb-16 -mb-12 rounded shadow-md">
@@ -104,7 +104,9 @@
           Take any clipboard entry and export it out into a Carbon image.
         </p>
         <div class="flex-row text-xs flex">
-            <p class="text-sm md:text-base px-20 md:px-8 pb-8 w-full text-center text-black">Use Carbon to share your code snippets on twitter, medium, and other social media outlets.</p>
+          <p class="text-sm md:text-base px-20 md:px-8 pb-8 w-full text-center text-black">
+            Use Carbon to share your code snippets on twitter, medium, and other social media outlets.
+          </p>
         </div>
         <div class="flex bg-white md:bg-transparent px-4 ml-4 -mr-16 shadow-lg md:shadow-none shadow rounded-lg flex-row text-center">
           <div class="w-full pb-12 mt-6">
@@ -114,11 +116,11 @@
             >
               explore the pomodoro timer
             </button>
-            <img
-          src="@/assets/images/carbon-cliplo.jpg"
-          alt=""
-          class="w-full md:hidden"
-        >
+            <g-image
+              src="@/assets/images/carbon-cliplo.jpg"
+              alt=""
+              class="w-full md:hidden"
+            /></g-image>
           </div>
         </div>
       </div>
@@ -150,11 +152,11 @@
         </div>
       </div>
       <div class="relative text-white text-center w-full px-0 lg:w-2/3 -mt-8 z-50">
-        <img
+        <g-image
           src="@/assets/images/pomodoro-cliplo.png"
           alt=""
           class="w-full -ml-24 md:-ml-0 px-0"
-        >
+        /></g-image>
       </div>
     </div>
 
@@ -174,11 +176,11 @@
         <p class="font-extrabold text-sm md:text-base mx-10 my-0 text-cyan-darker text-center rounded px-10 py-4 bg-cyan-lightest shadow">
           Cliplo comes loaded with over 45 different themes for the clipboard snippet styling thanks to the CodeMirror library. You can also customize the color scheme of the user interface with any colors you would like!
         </p>
-        <img
+        <g-image
           src="@/assets/images/cliplo-themes.jpg"
           alt=""
           class="rounded mt-10 shadow-deep"
-        >
+        />
 
         <h4 class="text-2xl md:text-4xl text-center mt-12 mb-0 mb-3 h4">
           Interested in learning more?<br>
@@ -186,7 +188,8 @@
         </h4>
 
         <contact-form />
-      </div>
+        </g-image>
+</div>
     </div>
   </Layout>
 </template>

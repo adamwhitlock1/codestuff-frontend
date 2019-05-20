@@ -71,7 +71,7 @@
 
       <div class="block md:flex w-full flex-row m-4 justify-end">
         <button
-          class="btn-default w-full mr-6 md:w-1/2 bg-black border-0 text-white text-lg"
+          class="btn-default w-full mr-6 md:w-1/3 bg-black border-0 text-white text-lg"
           type="submit"
         >
           Send me a message :)

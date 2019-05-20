@@ -59,11 +59,11 @@
 
 
         <div class="w-1/3 p-4">
-          <img
+          <g-image
             class="w-full rounded-lg shadow-lg mt-20"
             src="@/assets/images/profile.jpg"
             alt=""
-          >
+          />
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About me'
+    title: 'About Codestuff'
   }
 }
 </script>
