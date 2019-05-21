@@ -101,6 +101,7 @@
 <script>
 
 import * as THREE from 'three'
+import AOS from 'aos'
 
 export default {
   metaInfo: {
@@ -138,6 +139,16 @@ export default {
       },
     },
   mounted() {
+    if (typeof window !== "undefined") {
+    // initialize animate on scroll
+    AOS.init({
+      delay: 100,
+      offset: 30,
+      mirror: true,
+      once: false,
+      duration: 600
+    })
+    }
       this.init()
       this.animate()
   },
