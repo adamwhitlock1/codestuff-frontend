@@ -2,9 +2,9 @@
   <Layout>
     <div
 
-      class="container mt-12 flex justify-center align-middle items-center object-center"
+      class="lg:container md:mt-12 flex justify-center align-middle items-center object-center"
     >
-      <div class="flex-1 mt-12 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16">
+      <div class="flex-1 mt-2 lg:mt-12 justify-center align-middle items-center object-center p-4 mx-6 lg:mx-32 bg-trans-gradient rounded-lg shadow border-white border-2 lg:pb-16">
         <h2
           class="text-4xl font-light italic mb-0 pb-0 text-white text-center"
         >
@@ -20,21 +20,21 @@
         >
           some of our projects:
         </p>
-        <div class="flex px-10">
+        <div class="block md:flex px-10">
           <g-link
-            class="btn-default text-magenta hover:bg-magenta hover:text-white border border-solid border-magenta text-center no-underline bg-transparent w-1/3 mx-10"
+            class="block btn-default text-magenta hover:bg-magenta hover:text-white border border-solid border-magenta text-center no-underline bg-transparent md:w-1/3 my-4 mx-6"
             to="/cliplo"
           >
             cliplo
           </g-link>
           <g-link
-            class="btn-default border border-yellow border-solid  hover:bg-yellow hover:text-black text-yellow text-center no-underline bg-transparent w-1/3 mx-10"
+            class="block btn-default border border-yellow border-solid  hover:bg-yellow hover:text-black text-yellow text-center no-underline bg-transparent my-4 md:w-1/3 mx-6"
             to="/designer-panel"
           >
             designer panel
           </g-link>
           <g-link
-            class="btn-default text-cyan border border-solid  hover:bg-cyan hover:text-white text-center no-underline border-cyan bg-transparent w-1/3 mx-10"
+            class="block btn-default text-cyan border border-solid  hover:bg-cyan hover:text-white text-center no-underline border-cyan bg-transparent my-4 md:w-1/3 mx-6"
             to="/betapic"
           >
             betapic
