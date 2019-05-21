@@ -4,33 +4,19 @@
 
       class="container mt-12 flex justify-center align-middle items-center object-center"
     >
-      <div
-        class="flex-1 mt-12 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-duration="1000"
-      >
+      <div class="flex-1 mt-12 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16">
         <h2
           class="text-4xl font-light italic mb-0 pb-0 text-white text-center"
-          data-aos="fade-up"
-          data-aos-delay="150"
-          data-aos-duration="1100"
         >
           Unique software &amp; creative resources.
         </h2>
         <h3
           class="text-2xl tracking-wide text-white text-center mt-0"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1200"
         >
           Building applications and web based solutions for developers and designers.
         </h3>
         <p
           class="text-center text-white"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1200"
         >
           some of our projects:
         </p>
@@ -38,27 +24,18 @@
           <g-link
             class="btn-default text-magenta hover:bg-magenta hover:text-white border border-solid border-magenta text-center no-underline bg-transparent w-1/3 mx-10"
             to="/cliplo"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1300"
           >
             cliplo
           </g-link>
           <g-link
             class="btn-default border border-yellow border-solid  hover:bg-yellow hover:text-black text-yellow text-center no-underline bg-transparent w-1/3 mx-10"
             to="/designer-panel"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1300"
           >
             designer panel
           </g-link>
           <g-link
             class="btn-default text-cyan border border-solid  hover:bg-cyan hover:text-white text-center no-underline border-cyan bg-transparent w-1/3 mx-10"
             to="/betapic"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="1300"
           >
             betapic
           </g-link>
@@ -101,7 +78,6 @@
 <script>
 
 import * as THREE from 'three'
-import AOS from 'aos'
 
 export default {
   metaInfo: {
@@ -139,15 +115,6 @@ export default {
       },
     },
   mounted() {
-    if (typeof window !== "undefined") {
-    // initialize animate on scroll
-    AOS.init({
-      delay: 100,
-      offset: 10,
-      once: false,
-      duration: 600
-    })
-    }
       this.init()
       this.animate()
   },
