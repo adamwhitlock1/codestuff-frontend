@@ -10,11 +10,26 @@
 <script>
 import '~/assets/css/main.css'
 import Header from '../components/Header'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 export default {
   components: {
     Header
+  },
+  created(){
+    if (typeof window !== "undefined") {
+    // initialize animate on scroll
+    AOS.init({
+      delay: 100,
+      offset: 30,
+      mirror: true,
+      once: false,
+      duration: 600
+    })
+    }
   }
 }
+
 </script>
 
 <style>

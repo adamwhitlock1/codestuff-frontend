@@ -4,32 +4,61 @@
 
       class="container mt-12 flex justify-center align-middle items-center object-center"
     >
-      <div class="flex-1 mt-24 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2">
-        <h2 class="text-4xl font-light italic mb-0 pb-0 text-white text-center">
+      <div
+        class="flex-1 mt-32 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <h2
+          class="text-4xl font-light italic mb-0 pb-0 text-white text-center"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="1100"
+        >
           Unique software &amp; creative resources.
         </h2>
-        <h3 class="text-2xl tracking-wide text-white text-center mt-0">
+        <h3
+          class="text-2xl tracking-wide text-white text-center mt-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
           Building applications and web based solutions for developers and designers.
         </h3>
-        <p class="text-center text-white">
+        <p
+          class="text-center text-white"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200"
+        >
           some of our projects:
         </p>
         <div class="flex px-10">
           <g-link
             class="btn-default text-magenta hover:bg-magenta hover:text-white border border-solid border-magenta text-center no-underline bg-transparent w-1/3 mx-10"
             to="/cliplo"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1300"
           >
             cliplo
           </g-link>
           <g-link
             class="btn-default border border-yellow border-solid  hover:bg-yellow hover:text-black text-yellow text-center no-underline bg-transparent w-1/3 mx-10"
             to="/designer-panel"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1300"
           >
             designer panel
           </g-link>
           <g-link
             class="btn-default text-cyan border border-solid  hover:bg-cyan hover:text-white text-center no-underline border-cyan bg-transparent w-1/3 mx-10"
             to="/betapic"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1300"
           >
             betapic
           </g-link>
@@ -37,14 +66,8 @@
       </div>
     </div>
 
+    <div id="three-container" />
 
-
-    <transition
-      name="fade"
-      appear
-    >
-      <div id="three-container" />
-    </transition>
     <div
       class="pin-b pin-r absolute mr-8 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
       :class="{'opacity-100': showing_line_count }"
@@ -80,7 +103,7 @@
 import * as THREE from 'three'
 
 export default {
-    metaInfo: {
+  metaInfo: {
     title: 'Welcome to Codestuff'
   },
   data(){
@@ -91,7 +114,7 @@ export default {
       mesh: null,
       loader: null,
       lines:[],
-      line_count: 40,
+      line_count: 20,
       mouseX: null,
       mouseY: null,
       showing_line_count: false
@@ -243,13 +266,11 @@ export default {
         }
     }
   },
-  metaInfo: {
-    title: 'Welcome to codestuff.io'
-  }
 }
 </script>
 
 <style>
+
 #three-container {
   height: 100vh;
   width: 100vw;
@@ -259,13 +280,6 @@ export default {
   left: 0px;
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(27,3,17,1) 100%);
   overflow: hidden;
-  animation-name: fade-in;
-  animation-duration: 1.25s;
-}
-
-@keyframes fade-in {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .bg-trans-gradient {
