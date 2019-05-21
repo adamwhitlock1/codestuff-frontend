@@ -5,7 +5,7 @@
       class="container mt-12 flex justify-center align-middle items-center object-center"
     >
       <div
-        class="flex-1 mt-32 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16"
+        class="flex-1 mt-12 justify-center align-middle items-center object-center p-4 mx-12 bg-trans-gradient rounded-lg shadow border-white border-2 pb-16"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="1000"
