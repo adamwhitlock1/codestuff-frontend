@@ -143,8 +143,7 @@ export default {
     // initialize animate on scroll
     AOS.init({
       delay: 100,
-      offset: 30,
-      mirror: true,
+      offset: 10,
       once: false,
       duration: 600
     })
