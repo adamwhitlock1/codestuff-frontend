@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ClientOnly>
     <PushRotate
       right
       class="md:hidden"
@@ -67,6 +68,7 @@
         hire me
       </g-link>
     </PushRotate>
+    </ClientOnly>
     <nav class="flex items-center justify-between flex-wrap bg-cyan w-full z-50 pin-t shadow-lg">
       <div class="flex items-center flex-no-shrink text-white lg:ml-4">
         <g-link
@@ -150,13 +152,19 @@
 </template>
 
 <script>
-import { PushRotate} from 'vue-burger-menu'
+
 import Dropdown from "./Dropdown"
 export default {
   name: "Header",
   components: {
     Dropdown,
-    PushRotate
+    PushRotate: () =>
+import ('vue-burger-menu')
+        .then(m => m.PushRotate)
+        .catch()
+  },
+  mounted(){
+
   },
   data(){
     return {
