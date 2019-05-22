@@ -56,7 +56,7 @@
       @mouseenter="showing_line_count = true"
       @mouseleave="showing_line_count = false"
     >
-      <p class="text-xs mx-2 align-middle self-center">
+      <p class="hidden md:block text-xs mx-2 align-middle self-center">
         controls
       </p>
       <button
