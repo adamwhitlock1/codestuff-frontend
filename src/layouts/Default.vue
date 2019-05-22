@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans">
-    <Header class="z-50" />
-    <main>
+    <Header class="z-50 fixed pin-t" />
+    <main class="mt-32">
       <slot />
     </main>
   </div>

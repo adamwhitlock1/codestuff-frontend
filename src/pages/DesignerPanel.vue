@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="relative md:flex items-center flex-row md:py-6 md:mt-10 md:px-12 -mb-8 md:mb-0 z-50">
+    <div class="relative md:flex items-center flex-row md:py-6 md:mt-10 md:px-12 -mb-8 md:mb-0 z-40">
       <div class="text-white shadow-md text-center p-4 md:p-10 md:pr-16 bg-yellow rounded md:w-1/3">
         <h4 class="text-4xl text-black m-0 mb-3">
           The Designer Panel:
@@ -41,7 +41,7 @@
       id="utils"
       class="block md:flex flex-row items-center py-6 md:px-12 -mt-6 md:mt-10"
     >
-      <div class="hidden md:block text-white text-center bg-adobe md:w-1/6 rounded shadow-deep p-4 md:p-10 z-50">
+      <div class="hidden md:block text-white text-center bg-adobe md:w-1/6 rounded shadow-deep p-4 md:p-10 z-40">
         <g-image
           src="@/assets/images/designer_panel_1_utils.jpg"
           alt=""
@@ -112,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="block relative md:hidden text-white text-center bg-adobe rounded shadow-deep p-4 z-50 -my-6 mx-10 z-50">
+      <div class="block relative md:hidden text-white text-center bg-adobe rounded shadow-deep p-4 z-40 -my-6 mx-10 z-40">
         <g-image
           src="@/assets/images/designer_panel_1_utils.jpg"
           alt=""
@@ -123,7 +123,7 @@
     <!-- START TEMPLATES ROW -->
     <div
       id="templates"
-      class="relative block md:flex flex-row items-center -my-6  md:py-6 md:px-6 md:px-12 z-40"
+      class="relative block md:flex flex-row items-center -my-6  md:py-6 md:px-6 md:px-12 z-30"
     >
       <!-- START 5/6 COLUMN -->
       <div class="text-white bg-cyan md:w-5/6 py-1 md:pr-12 md:pl-6 md:rounded shadow-md">
@@ -188,7 +188,7 @@
       </div>
 
       <!-- START 1/6 COLUMN -->
-      <div class="text-white text-center bg-adobe md:w-1/6 md:-ml-6 rounded shadow-deep mx-10 -mt-6 p-4 md:p-10 md:m-3 z-50">
+      <div class="text-white text-center bg-adobe md:w-1/6 md:-ml-6 rounded shadow-deep mx-10 -mt-6 p-4 md:p-10 md:m-3 z-40">
         <g-image
           src="@/assets/images/designer_panel_2.jpg"
           alt=""
@@ -203,7 +203,7 @@
       class="block md:flex flex-row items-center md:py-6 md:px-12"
     >
       <!-- START 1/6 COLUMN -->
-      <div class="relative hidden md:block text-white text-center bg-adobe md:w-2/3 md:-mr-6 rounded shadow-deep p-2 md:p-10 md:m-3 -mb-6 z-50">
+      <div class="relative hidden md:block text-white text-center bg-adobe md:w-2/3 md:-mr-6 rounded shadow-deep p-2 md:p-10 md:m-3 -mb-6 z-40">
         <g-image
           src="@/assets/images/designer_panel_3_edits_all.jpg"
           alt=""

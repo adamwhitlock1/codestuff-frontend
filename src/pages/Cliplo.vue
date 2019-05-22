@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="flex items-center flex-row lg:py-6 md:mt-6 md:px-12">
-      <div class="bg-transparent hidden md:block -mr-10 w-1/2 z-50">
+      <div class="bg-transparent hidden md:block -mr-10 w-1/2 z-40">
         <g-image
           class="w-full rounded shadow-deep"
           src="@/assets/images/cliplo-main-history.jpg"
@@ -20,13 +20,14 @@
 
         <div class="flex-row md:ml-6 mx-2">
           <g-image
-            class="relative w-full visible md:hidden -mt-8 -mb-12 z-50"
+            class="relative w-full visible md:hidden -mt-8 -mb-12 z-40"
             src="@/assets/images/cliplo-main-history-trans.png"
             alt=""
           />
         </div>
 
-        <p class="
+        <p
+class="
         md:bg-transparent
         bg-cyan
         inline-block
@@ -43,7 +44,8 @@
         md:text-cyan
         text-sm
         text-white
-        ">
+        "
+>
           A modern clipboard manager that is built for developer productivity. Access your clipboard history even after your computer restarts. Share code snippets instantly on carbon.now.sh, and archive your snippets for long term usage. Stay on task and remember to take breaks throughout the day with a built in pomodoro timer.
         </p>
 
@@ -75,7 +77,8 @@
       relative
       "
     >
-      <div class="
+      <div
+class="
       bg-black
       md:bg-magenta
       md:-mr-10
@@ -87,12 +90,13 @@
       text-white
       w-full
       md:w-2/5
-      ">
-
-        <h4 class="text-2xl md:text-4xl text-center mt-6 mb-0 mb-3 h4">
+      "
+>
+<h4 class="text-2xl md:text-4xl text-center mt-6 mb-0 mb-3 h4">
           How it works.
         </h4>
-        <p class="
+        <p
+class="
         bg-grey-darkest
         md:bg-magenta-lightest
         font-extrabold
@@ -108,10 +112,11 @@
         text-sm
         text-white
         shadow
-        ">
+        "
+>
           Cliplo watches your clipboard and saves entries as they are copied throughout the day.
         </p>
-        <div class="block md:hidden text-white text-center bg-transparent -ml-4 -mr-4 mt-6 -mb-4 z-50">
+        <div class="block md:hidden text-white text-center bg-transparent -ml-4 -mr-4 mt-6 -mb-4 z-40">
           <g-image
             src="@/assets/images/how-it-works-trans.png"
             alt=""
@@ -144,7 +149,7 @@
         </div>
       </div>
 
-      <div class="hidden md:block text-white text-center bg-transparent md:w-3/5 md:mx-0 md:ml-0 -mt-8 -mb-8 z-50">
+      <div class="hidden md:block text-white text-center bg-transparent md:w-3/5 md:mx-0 md:ml-0 -mt-8 -mb-8 z-40">
         <g-image
           src="@/assets/images/how-it-works-1.jpg"
           alt=""
@@ -223,7 +228,7 @@
           </div>
         </div>
       </div>
-      <div class="relative md:ml-2 md:mr-1 text-white text-center px-0 lg:w-2/3 -mt-8 md:mt-0 z-50">
+      <div class="relative md:ml-2 md:mr-1 text-white text-center px-0 lg:w-2/3 -mt-8 md:mt-0 z-40">
         <g-image
           src="@/assets/images/pomodoro-cliplo.jpg"
           alt=""

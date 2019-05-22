@@ -36,8 +36,8 @@
       </a>
     </div>
     <p class="text-center my-0">
-      looking for a great people to work with<br>
-      resumes available by request
+      looking for great people to work with<br>
+      resume available by request
     </p>
     <contact-form />
   </Layout>

@@ -4,7 +4,7 @@
 
       class="lg:container md:mt-12 flex justify-center align-middle items-center object-center"
     >
-      <div class="flex-1 mt-2 lg:mt-12 justify-center align-middle items-center object-center p-4 mx-6 lg:mx-32 bg-trans-gradient rounded-lg shadow border-white border-2 lg:pb-16">
+      <div class="flex-1 mt-0 lg:mt-12 justify-center align-middle items-center object-center px-4 py-2 mx-6 lg:mx-32 bg-trans-gradient rounded-lg shadow border-white border-2 lg:pb-16">
         <h2
           class="text-4xl font-light italic mb-0 pb-0 text-white text-center"
         >

@@ -7,7 +7,7 @@
       advertising, print layout, web design, and general pixel pushing
     </p>
     <a
-      class="btn-default bg-magenta hover:bg-yellow hover:text-black text-white z-50 -mb-8 mt-2 relative shadow-lg"
+      class="btn-default bg-magenta hover:bg-yellow hover:text-black text-white z-40 -mb-8 mt-2 relative shadow-lg"
       href="https://dribbble.com/codestuff2"
       target="_blank"
     >
