@@ -188,6 +188,12 @@ import ('vue-burger-menu')
   background-color: #fff !important;
 }
 
+.bm-overlay {
+  background: rgba(0, 0, 0, 0) !important;
+}
 
+.bm-menu {
+background-color: #00afec !important;
+}
 
 </style>

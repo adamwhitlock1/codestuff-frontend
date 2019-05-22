@@ -62,12 +62,5 @@ h4, h5, h6, .h4, .h5, .h6 {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.bm-menu {
-  @apply: shadow;
-background-color: #00afec !important;
-}
 
-.bm-overlay {
-  background: rgba(0, 0, 0, 0) !important;
-}
 
