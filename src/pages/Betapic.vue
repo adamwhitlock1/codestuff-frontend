@@ -1,8 +1,16 @@
 <template>
   <div>
     <Layout>
-      <div class="flex items-center flex-row py-6 mt-6 px-12">
-        <div class="text-white text-center p-6 pr-16 bg-white rounded w-1/3">
+      <div class="block md:flex items-center flex-row py-6 mt-6 md:px-12">
+        <div class="block md:hidden md:w-2/3 px-2 md:pr-4">
+          <g-image
+            class="w-full"
+            src="@/assets/images/betapic-screens-white.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="text-white text-center p-6 md:pr-16 bg-white rounded md:w-1/3">
           <h4 class="text-4xl text-magenta m-0 mb-3">
             Betapic: unified search for creative commons images.
           </h4>
@@ -23,7 +31,7 @@
           </div>
         </div>
 
-        <div class="w-2/3 pr-4">
+        <div class="hidden md:flex md:w-2/3 px-2 md:pr-4">
           <g-image
             class="w-full"
             src="@/assets/images/betapic-screens-white.jpg"
