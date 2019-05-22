@@ -6,17 +6,17 @@
     >
       <div class="flex-1 mt-0 lg:mt-12 justify-center align-middle items-center object-center px-4 py-2 mx-6 lg:mx-32 bg-trans-gradient rounded-lg shadow border-white border-2 lg:pb-16">
         <h2
-          class="text-4xl font-light italic mb-0 pb-0 text-white text-center"
+          class="text-4xl font-light italic mb-0 pb-0 mt-0 md:mt-4 text-white text-center"
         >
           Unique software &amp; creative resources.
         </h2>
         <h3
-          class="text-2xl tracking-wide text-white text-center mt-0"
+          class="text-2xl tracking-wide text-white text-center mt-0 mb-2 md:mb-8"
         >
           Building applications and web based solutions for developers and designers.
         </h3>
         <p
-          class="text-center text-white"
+          class="text-center text-white mt-0"
         >
           some of our projects:
         </p>
@@ -46,7 +46,7 @@
     <div id="three-container" />
 
     <div
-      class="pin-b pin-r absolute mr-8 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
+      class="pin-b pin-r fixed mr-8 text-xs mb-10 text-white flex h-8 align-middle opacity-0"
       :class="{'opacity-100': showing_line_count }"
     >
       lines: {{ line_count }}
