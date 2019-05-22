@@ -51,6 +51,7 @@
     >
       lines: {{ line_count }}
     </div>
+
     <div
       class="pin-b pin-r fixed m-4 text-white flex h-8 align-middle"
       @mouseenter="showing_line_count = true"
@@ -115,8 +116,11 @@ export default {
       },
     },
   mounted() {
+
+    setTimeout(()=>{
       this.init()
       this.animate()
+    },250)
   },
   methods: {
     init: function() {
