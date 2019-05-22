@@ -52,7 +52,7 @@
       lines: {{ line_count }}
     </div>
     <div
-      class="pin-b pin-r absolute m-4 text-white flex h-8 align-middle"
+      class="pin-b pin-r fixed m-4 text-white flex h-8 align-middle"
       @mouseenter="showing_line_count = true"
       @mouseleave="showing_line_count = false"
     >
