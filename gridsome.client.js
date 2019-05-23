@@ -15,8 +15,6 @@ export default function(Vue) {
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.directive('scrolly', {
     bind(el, binding, vnode){
-      console.log("directive worked")
-
       const onclick = event => {
         event.stopPropagation()
         console.log(binding.value.id)
@@ -24,7 +22,6 @@ export default function(Vue) {
           behavior: 'smooth'
         })
       }
-
       el.addEventListener('click', onclick)
     }
   })
