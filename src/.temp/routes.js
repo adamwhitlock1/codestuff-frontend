@@ -60,21 +60,6 @@ export default [
     meta: { isStatic: true, isIndex: false }
   },
   {
-    name: "wordPressPostTag",
-    path: "/tag/:slug/:page(\\d+)?",
-    component: () => import(/* webpackChunkName: "component--word-press-post-tag" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressPostTag.vue")
-  },
-  {
-    name: "wordPressPost",
-    path: "/:year/:month/:day/:slug",
-    component: () => import(/* webpackChunkName: "component--word-press-post" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressPost.vue")
-  },
-  {
-    name: "wordPressCategory",
-    path: "/category/:slug/:page(\\d+)?",
-    component: () => import(/* webpackChunkName: "component--word-press-category" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/WordPressCategory.vue")
-  },
-  {
     name: "*",
     path: "*",
     component: () => import(/* webpackChunkName: "component--404" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/node_modules/gridsome/app/pages/404.vue"),
