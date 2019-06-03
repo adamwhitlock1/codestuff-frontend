@@ -11,10 +11,7 @@
       href="https://dribbble.com/codestuff2"
       target="_blank"
     >
-      <font-awesome
-        :icon="['fab', 'dribbble']"
-        class="text-xl pr-2"
-      />
+      <font-awesome :icon="['fab', 'dribbble']" class="text-xl pr-2" />
       more work available at Dribbble
     </a>
 
@@ -24,7 +21,7 @@
         data-caption="Wits &amp; Beaux Digital Advertisements"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="~/assets/images/wits-beaux-ads.jpg"
         />
       </a>
@@ -34,17 +31,14 @@
         data-caption="Fresh Press CD Single Sleeve"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/fresh-press.jpg"
         />
       </a>
 
-      <a
-        href="/images/ninjas.jpg"
-        data-caption="Design Ninjas Logo"
-      >
+      <a href="/images/ninjas.jpg" data-caption="Design Ninjas Logo">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/ninjas.jpg"
         />
       </a>
@@ -54,17 +48,14 @@
         data-caption="Greeley Jazz Festival Print Layouts"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/jazz.jpg"
         />
       </a>
 
-      <a
-        href="/images/logos.jpg"
-        data-caption="Logo Concepts"
-      >
+      <a href="/images/logos.jpg" data-caption="Logo Concepts">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/logos.jpg"
         />
       </a>
@@ -74,18 +65,14 @@
         data-caption="Once Upond a Child Print Ads"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/once-ads.jpg"
         />
       </a>
 
-
-      <a
-        href="/images/yunique-logos.jpg"
-        data-caption="Yunique Logos"
-      >
+      <a href="/images/yunique-logos.jpg" data-caption="Yunique Logos">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/yunique-logos.jpg"
         />
       </a>
@@ -95,37 +82,28 @@
         data-caption="Pursuit Fitness Digital Ads"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/pursuit-ads.jpg"
         />
       </a>
 
-      <a
-        href="/images/hoppy-exp.jpg"
-        data-caption="Hoppy Accident Beer Logo"
-      >
+      <a href="/images/hoppy-exp.jpg" data-caption="Hoppy Accident Beer Logo">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/hoppy-exp.jpg"
         />
       </a>
 
-      <a
-        href="/images/smash-test.jpg"
-        data-caption="Smash Test Dummy Logo"
-      >
+      <a href="/images/smash-test.jpg" data-caption="Smash Test Dummy Logo">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/smash-test.jpg"
         />
       </a>
 
-      <a
-        href="/images/protest-porter.jpg"
-        data-caption="Protest Porter Logo"
-      >
+      <a href="/images/protest-porter.jpg" data-caption="Protest Porter Logo">
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/protest-porter.jpg"
         />
       </a>
@@ -135,7 +113,7 @@
         data-caption="World Beverage Website Mockup"
       >
         <g-image
-          class="w-5/6 lg:w-1/5 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
+          class="w-5/6 lg:w-1/4 md:w-1/3 m-1 p-2 md:p-0 shadow-lg img-gallery"
           src="@/assets/images/world-beverage.jpg"
         />
       </a>
@@ -144,22 +122,21 @@
 </template>
 
 <script>
-  import baguetteBox from 'baguettebox.js'
-  export default {
-    metaInfo: {
-      title: 'Design Work'
-    },
-    data(){
-      return {
-        index: null
-      }
-    },
-    mounted(){
-      baguetteBox.run('.gallery')
+import baguetteBox from 'baguettebox.js'
+export default {
+  metaInfo: {
+    title: 'Design Work'
+  },
+  data() {
+    return {
+      index: null
     }
+  },
+  mounted() {
+    baguetteBox.run('.gallery')
   }
+}
 </script>
 
 <style>
-
 </style>
