@@ -5,9 +5,9 @@
       <span>{{ $page.blogPost.date }}</span>
       <g-image :src="$page.blogPost.image" />
       <div
-        class="content"
-        v-html="$page.blogPost.content"
-      />
+class="content"
+           v-html="$page.blogPost.content"
+/>
     </div>
   </Layout>
 </template>
@@ -28,7 +28,6 @@ export default {
       title
       date (format: "D MMMM, YYYY")
       content
-      image
     }
   }
 </page-query>

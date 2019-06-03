@@ -21,20 +21,10 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: '_posts/**/*.md',
+        path: '_posts/blog/*.md',
         typeName: 'BlogPost',
-        remark: {
-          plugins: [
-            // ...local plugins
-          ]
-        }
+        route: '/:slug'
       }
-    },
-    {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/admin`
-      }
-    },
+    }
   ]
 }

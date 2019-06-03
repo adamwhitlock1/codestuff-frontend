@@ -60,7 +60,8 @@ export default [
     meta: { isStatic: true, isIndex: false }
   },
   {
-    path: "/posts/blog/05-23-2019-test-blog-entry",
+    name: "blogPost",
+    path: "/:slug",
     component: () => import(/* webpackChunkName: "component--blog-post" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/templates/BlogPost.vue")
   },
   {

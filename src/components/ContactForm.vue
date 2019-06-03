@@ -10,17 +10,11 @@
     >
       <p hidden>
         <label>
-          Don’t fill this out: <input
-            v-model="formData['bot-field']"
-            name="bot-field"
-          >
+          Don’t fill this out:
+          <input v-model="formData['bot-field']" name="bot-field" />
         </label>
       </p>
-      <input
-        type="hidden"
-        name="form-name"
-        value="contact"
-      >
+      <input type="hidden" name="form-name" value="contact" />
 
       <div class="block md:flex flex-row">
         <div class="mt-6 md:w-1/2">
@@ -34,7 +28,7 @@
             required
             placeholder="adam"
             class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-xl md:mx-2"
-          >
+          />
         </div>
 
         <div class="mt-6 md:w-1/2">
@@ -48,7 +42,7 @@
             placeholder="awesome@email.com"
             required
             class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-xl md:mx-2"
-          >
+          />
         </div>
       </div>
 
@@ -59,7 +53,7 @@
         <textarea
           v-model="formData.message"
           class="rounded-lg flex-grow font-sans text-xl p-5 border-0 text-cyan-dark shadow-md self-center justify-center"
-          placeholder="hey there good lookin"
+          placeholder="hey there"
           required
           rows="8"
           name="message"
@@ -79,36 +73,37 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        formData: {
-          'form-name': "contact",
-          "bot-field": ""
-        },
-      }
-    },
-    methods: {
-      encode(data) {
-        return Object.keys(data)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&')
-      },
-      handleSubmit() {
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: this.encode({
-            ...this.formData,
-          }),
-        })
-        .then(() => this.$router.push('/success'))
-        .catch(e => alert(e))
+export default {
+  data() {
+    return {
+      formData: {
+        'form-name': 'contact',
+        'bot-field': ''
       }
     }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          ...this.formData
+        })
+      })
+        .then(() => this.$router.push('/success'))
+        .catch(e => alert(e))
+    }
   }
+}
 </script>
 
 <style>
-
 </style>

@@ -9,49 +9,41 @@
         target="_blank"
         class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
       >
-        <font-awesome
-          :icon="['fab', 'github']"
-          class="text-xl py-2 h-4"
-        />
+        <font-awesome :icon="['fab', 'github']" class="text-xl py-2 h-4" />
       </a>
       <a
         href="https://twitter.com/codestuff2"
         target="_blank"
         class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
       >
-        <font-awesome
-          :icon="['fab', 'twitter']"
-          class="text-xl py-2 h-4"
-        />
+        <font-awesome :icon="['fab', 'twitter']" class="text-xl py-2 h-4" />
       </a>
       <a
         href="https://dribbble.com/codestuff2"
         target="_blank"
         class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
       >
-        <font-awesome
-          :icon="['fab', 'dribbble']"
-          class="text-xl py-2 h-4"
-        />
+        <font-awesome :icon="['fab', 'dribbble']" class="text-xl py-2 h-4" />
       </a>
     </div>
     <p class="text-center my-0">
-      looking for great people to work with<br>
+      looking for great people to work with<br />
       resume available by request
     </p>
-    <contact-form />
+    <div class="container">
+      <contact-form class="mx-4" />
+    </div>
   </Layout>
 </template>
 
 <script>
-import ContactForm from "../components/ContactForm"
+import ContactForm from '../components/ContactForm'
 export default {
-components: {
-  ContactForm
-}
+  components: {
+    ContactForm
+  }
 }
 </script>
 
 <style scoped>
-
 </style>
