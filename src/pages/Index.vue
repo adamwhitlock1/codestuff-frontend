@@ -207,12 +207,15 @@ export default {
           this.renderer.render(this.scene, this.camera)
     },
     removeLine(){
+      if (this.line_count > 0 ) {
           this.line_count = this.line_count - 1
           var selectedObject = this.scene.getObjectByName("line_" + (this.line_count))
           this.lines.pop()
           console.log(this.line_count)
           this.scene.remove( selectedObject )
           this.renderer.render(this.scene, this.camera)
+      }
+
     },
     onWindowResize() {
       if (typeof window !== "undefined") {
