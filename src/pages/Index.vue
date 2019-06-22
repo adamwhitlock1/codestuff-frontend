@@ -126,7 +126,7 @@ export default {
     init: function() {
       if (typeof window !== "undefined") {
         let container = document.getElementById('three-container')
-        this.camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 1, 500)
+        this.camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 1, 5000)
         this.camera.position.set( 0, 0, 125 )
         this.camera.lookAt( 0, 0, 0 )
         this.scene = new THREE.Scene()
