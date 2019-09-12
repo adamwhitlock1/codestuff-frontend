@@ -1,5 +1,11 @@
 export default [
   {
+    name: "experimentsBounce",
+    path: "/experiments/bounce",
+    component: () => import(/* webpackChunkName: "component--experiments-bounce" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/experiments/bounce.vue"),
+    meta: { isStatic: true }
+  },
+  {
     name: "success",
     path: "/success",
     component: () => import(/* webpackChunkName: "component--success" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Success.vue"),
@@ -36,15 +42,15 @@ export default [
     meta: { isStatic: true }
   },
   {
-    name: "cliplo",
-    path: "/cliplo",
-    component: () => import(/* webpackChunkName: "component--cliplo" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Cliplo.vue"),
-    meta: { isStatic: true }
-  },
-  {
     name: "betapic",
     path: "/betapic",
     component: () => import(/* webpackChunkName: "component--betapic" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Betapic.vue"),
+    meta: { isStatic: true }
+  },
+  {
+    name: "cliplo",
+    path: "/cliplo",
+    component: () => import(/* webpackChunkName: "component--cliplo" */ "/Users/adamwhitlock/Documents/GitHub/codestuff-frontend/src/pages/Cliplo.vue"),
     meta: { isStatic: true }
   },
   {

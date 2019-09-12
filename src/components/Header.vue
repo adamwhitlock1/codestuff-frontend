@@ -107,6 +107,18 @@
             />
           </li>
           <li class="p-2 mx-3 nav-link">
+            <dropdown
+              dropdown-text="experiments"
+              :links="[
+                {
+                  text: 'bounce',
+                  to: '/experiments/bounce'
+                },
+
+              ]"
+            />
+          </li>
+          <li class="p-2 mx-3 nav-link">
             <g-link class="text-white no-underline" to="/design">
               design
             </g-link>
@@ -123,6 +135,7 @@
           </li>
         </ul>
       </div>
+
     </nav>
   </div>
 </template>
