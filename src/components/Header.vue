@@ -130,12 +130,11 @@
           </li>
           <li class="p-2 mx-3 lg:pb-2 md:pb-12 sm:pb-12 nav-link">
             <g-link class="text-white no-underline" to="/contact">
-              hire me
+              contact
             </g-link>
           </li>
         </ul>
       </div>
-
     </nav>
   </div>
 </template>
