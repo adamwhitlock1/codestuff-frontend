@@ -54,6 +54,13 @@
 
         <g-link
           class="text-white no-underline my-0 py-0 text-base"
+          to="/blog-archive"
+        >
+          articles
+        </g-link>
+
+        <g-link
+          class="text-white no-underline my-0 py-0 text-base"
           to="/contact"
         >
           contact
@@ -93,16 +100,16 @@
               :links="[
                 {
                   text: 'cliplo',
-                  to: '/cliplo',
+                  to: '/cliplo'
                 },
                 {
                   text: 'designer panel',
-                  to: '/designer-panel',
+                  to: '/designer-panel'
                 },
                 {
                   text: 'betapic',
-                  to: '/betapic',
-                },
+                  to: '/betapic'
+                }
               ]"
             />
           </li>
@@ -128,6 +135,12 @@
               photography
             </g-link>
           </li>
+          <li class="p-2 mx-3 nav-link">
+            <g-link class="text-white no-underline" to="/blog-archive">
+              articles
+            </g-link>
+          </li>
+
           <li class="p-2 mx-3 lg:pb-2 md:pb-12 sm:pb-12 nav-link">
             <g-link class="text-white no-underline" to="/contact">
               contact
@@ -140,28 +153,28 @@
 </template>
 
 <script>
-import Dropdown from "./Dropdown";
+import Dropdown from './Dropdown'
 export default {
-  name: "Header",
+  name: 'Header',
   components: {
     Dropdown,
     PushRotate: () =>
-      import("vue-burger-menu")
-        .then((m) => m.PushRotate)
-        .catch(),
+      import('vue-burger-menu')
+        .then(m => m.PushRotate)
+        .catch()
   },
   mounted() {},
   data() {
     return {
-      isMobileNavHidden: true,
-    };
+      isMobileNavHidden: true
+    }
   },
   methods: {
     showMobileNav(danStatus) {
-      this.isMobileNavHidden = !this.isMobileNavHidden;
-    },
-  },
-};
+      this.isMobileNavHidden = !this.isMobileNavHidden
+    }
+  }
+}
 </script>
 
 <style>

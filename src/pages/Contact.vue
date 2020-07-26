@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h2 class="mb-0 text-5xl italic text-center">
+    <h2 class="mb-0 pt-12 text-5xl italic text-center">
       Contact
     </h2>
     <div class="flex justify-center w-full mb-4 align-middle">
@@ -38,15 +38,15 @@
 </template>
 
 <script>
-import ContactForm from "../components/ContactForm";
+import ContactForm from '../components/ContactForm'
 export default {
   metaInfo: {
-    title: "Contact",
+    title: 'Contact'
   },
   components: {
-    ContactForm,
-  },
-};
+    ContactForm
+  }
+}
 </script>
 
 <style scoped></style>

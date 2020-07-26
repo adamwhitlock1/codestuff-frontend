@@ -2,7 +2,7 @@
   <div class="layout">
     <div class="font-sans sm:min-h-full min-h-screen">
       <Header class="z-50 fixed top-0" />
-      <main class="mt-32 sm:min-h-full min-h-screen" id="page-wrap">
+      <main class="mt-20 sm:min-h-full min-h-screen" id="page-wrap">
         <slot />
       </main>
     </div>
@@ -10,27 +10,27 @@
 </template>
 
 <script>
-import "~/assets/css/main.css";
-import Header from "../components/Header";
+import '~/assets/css/main.css'
+import Header from '../components/Header'
 // import "aos/dist/aos.css";
 export default {
   components: {
-    Header,
+    Header
   },
   created() {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
+        window.netlifyIdentity.on('init', user => {
           if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/'
+            })
           }
-        });
+        })
       }
     }
-  },
-};
+  }
+}
 </script>
 
 <static-query>
@@ -120,7 +120,7 @@ img {
   font-family: sans-serif;
 }
 #baguetteBox-overlay .full-image:before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 50%;
   width: 1px;

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div
-      class="relative z-40 flex-row items-center -mb-8 md:flex md:py-6 md:mt-10 md:px-10 md:mb-0"
+      class="relative z-40 flex-row items-center -mb-8 md:flex md:py-12 md:mt-10 md:px-10 md:mb-0"
     >
       <div
         class="p-4 text-center text-white bg-yellow-500 rounded shadow-md md:p-10 md:pr-16 md:w-1/3 md:ml-4"
@@ -302,15 +302,15 @@
 </template>
 
 <script>
-import ContactForm from "../components/ContactForm";
+import ContactForm from '../components/ContactForm'
 export default {
   metaInfo: {
-    title: "Designer Panel",
+    title: 'Designer Panel'
   },
   components: {
-    ContactForm,
-  },
-};
+    ContactForm
+  }
+}
 </script>
 
 <style></style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Layout>
-      <div class="flex-row items-center block py-6 mt-6 md:flex md:px-10">
+      <div class="flex-row items-center block py-12 mt-6 md:flex md:px-10">
         <div class="block px-2 md:hidden md:w-2/3 md:pr-4">
           <g-image
             class="w-full"
@@ -49,9 +49,9 @@
 <script>
 export default {
   metaInfo: {
-    title: "Betapic photo search",
-  },
-};
+    title: 'Betapic photo search'
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

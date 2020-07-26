@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="flex flex-row items-center lg:py-6 md:mt-6 md:px-12">
+    <div class="flex flex-row items-center lg:py-12 md:mt-6 md:px-12">
       <div class="z-40 hidden w-1/2 -mr-2 bg-transparent md:block">
         <g-image
           class="w-full rounded shadow-xl"
@@ -267,15 +267,15 @@
 </template>
 
 <script>
-import ContactForm from "../components/ContactForm";
+import ContactForm from '../components/ContactForm'
 export default {
   metaInfo: {
-    title: "Cliplo clipboard manager",
+    title: 'Cliplo clipboard manager'
   },
   components: {
-    ContactForm,
-  },
-};
+    ContactForm
+  }
+}
 </script>
 
 <style></style>

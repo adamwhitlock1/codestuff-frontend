@@ -1,6 +1,6 @@
 <template>
   <Layout class="w-full text-center">
-    <h2 class="mb-0 text-5xl italic">
+    <h2 class="mb-0 pt-12 text-5xl italic">
       photography:
     </h2>
     <p class="mt-0 mb-8">
@@ -138,20 +138,20 @@
 </template>
 
 <script>
-import baguetteBox from "baguettebox.js";
+import baguetteBox from 'baguettebox.js'
 
 export default {
   metaInfo: {
-    title: "Photography",
+    title: 'Photography'
   },
   components: {},
   data() {
-    return {};
+    return {}
   },
   mounted() {
-    baguetteBox.run(".gallery");
-  },
-};
+    baguetteBox.run('.gallery')
+  }
+}
 </script>
 
 <style scoped></style>

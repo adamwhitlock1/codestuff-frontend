@@ -1,6 +1,6 @@
 <template>
   <Layout class="flex w-full text-center">
-    <h2 class="mb-0 text-5xl italic">
+    <h2 class="mb-0 text-5xl italic pt-12">
       design:
     </h2>
     <p class="mt-0 mb-8">
