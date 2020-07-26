@@ -29,7 +29,7 @@
           </p>
           <div class="mt-8 mb-8">
             <a
-              href="//betapic.codestuff.io"
+              href="https://betapic.codestuff.io"
               target="_blank"
               class="px-6 py-3 font-sans text-lg text-white no-underline border-0 rounded-full shadow bg-magenta-500"
             >
