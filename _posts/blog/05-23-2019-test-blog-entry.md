@@ -1,21 +1,18 @@
 ---
-title: First post
-date: 2018-09-15 07:42:34
+title: Conway's Game of Life - P5.js
+date: 2020-07-20T20:57:00.000Z
 description: Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
   enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
   Phasellus viverra nulla ut metus varius laoreet.
-image: /images/uploads/cliplo-main-history.jpg
+image: /images/uploads/conways-game-of-life.png
 slug: first
 ---
+Using P5.js I made this simple example of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Everything about it is pretty simple, and it uses the canvas element to draw out the game over time.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+[P5.js](https://p5js.org/) is a pretty interesting library for creating interactive programs with graphical elements. I have seen it often times used for games, scientific data display, and other graphically intense applications. At first I was going to try and use Vue with P5, but I kept running into issues with Vue re-rendering and undesirable times, so I went with a more vanilla version of using P5 for this.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+[View the source code on github](https://github.com/adamwhitlock1/conways-game-of-life-rollup)
 
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+The whole thing is about 95 lines of JavaScript total, and I used [rollup](https://rollupjs.org/guide/en/) to bundle the code.
 
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-
-Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+If you are interested in learning to use P5.js you should check out the [Coding Train on Youtube](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw). The channel is really interesting, and the host Daniel Shiffman is entertaining and fun to watch.
