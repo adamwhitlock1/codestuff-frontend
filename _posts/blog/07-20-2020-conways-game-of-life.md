@@ -1,10 +1,11 @@
 ---
-title: Conway's Game of Life - P5.js
 date: 2020-07-20T20:57:00.000Z
-description: Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-  enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-  Phasellus viverra nulla ut metus varius laoreet.
+title: Conway's Game of Life - P5.js
 image: /images/uploads/conways-game-of-life.png
+description: Using P5.js I made this simple example of [Conway's Game of
+  Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Everything about
+  it is pretty simple, and it uses the canvas element to draw out the game over
+  time.
 slug: first
 ---
 Using P5.js I made this simple example of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Everything about it is pretty simple, and it uses the canvas element to draw out the game over time.
