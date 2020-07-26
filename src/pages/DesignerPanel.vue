@@ -1,43 +1,42 @@
 <template>
   <Layout>
     <div
-      class="relative md:flex items-center flex-row md:py-6 md:mt-10 md:px-12 -mb-8 md:mb-0 z-40"
+      class="relative z-40 flex-row items-center -mb-8 md:flex md:py-6 md:mt-10 md:px-10 md:mb-0"
     >
       <div
-        class="text-white shadow-md text-center p-4 md:p-10 md:pr-16 bg-yellow rounded md:w-1/3"
+        class="p-4 text-center text-white bg-yellow-500 rounded shadow-md md:p-10 md:pr-16 md:w-1/3 md:ml-4"
       >
-        <h4 class="text-4xl text-black m-0 mb-3">
+        <h4 class="m-0 mb-3 text-4xl text-black">
           The Designer Panel:
         </h4>
         <p
-          class="font-extrabold md:mx-12 my-2 md:my-0  text-yellow-darkest rounded px-10 py-4 bg-yellow-lightest shadow"
+          class="px-10 py-4 my-2 font-extrabold text-yellow-800 bg-yellow-200 rounded shadow md:mx-12 md:my-0"
         >
           tech used:<br />
-          html, css, javascript, nodejs, adobe scripting libraries.
+          html, css, javascript, node, jquery, velocity.js, adobe scripting
+          libraries.
         </p>
-        <div class="block md:hidden bg-adobe p-1 rounded shadow-deep">
+        <div class="block p-1 rounded shadow-lg md:hidden bg-adobe">
           <g-image src="@/assets/images/designer_panel.jpg" alt="" />
         </div>
         <p
-          class="text-sm md:text-base text-black mt-6 md:mt-4 md:mb-4 mb-8 px-6 md:px-0"
+          class="px-6 mt-6 mb-8 text-sm text-black md:text-base md:mt-4 md:mb-4 md:px-0"
         >
           A concept that was developed while working as a graphic designer. This
           Photoshop extension includes over 100 tools and workflow accelerators
           for the daily designer. The Designer Panel has a three tab structure
           including Utilities, Templates, and Edits.
         </p>
-        <div class="my-8 hidden md:block">
+        <div class="hidden my-8 md:block">
           <button
             v-scrolly="{ id: '#utils' }"
-            class="rounded-full font-sans border-0 text-yellow-darkest text-lg no-underline bg-white shadow px-6 py-3"
+            class="px-6 py-3 font-sans text-lg text-yellow-800 no-underline bg-white border-0 rounded-full shadow"
           >
             explore the utilities
           </button>
         </div>
       </div>
-      <div
-        class="hidden md:block bg-adobe p-4 rounded shadow-deep -ml-6 w-2/3 "
-      >
+      <div class="hidden w-2/3 p-4 -ml-6 rounded shadow-lg md:block bg-adobe ">
         <g-image
           class="w-full"
           src="@/assets/images/designer_panel.jpg"
@@ -49,31 +48,32 @@
     <!-- START UTILS ROW -->
     <div
       id="utils"
-      class="block md:flex flex-row items-center py-6 md:px-12 -mt-6 md:mt-10"
+      class="flex-row items-center block py-6 -mt-6 md:flex md:px-12 md:mt-10"
     >
       <div
-        class="hidden md:block text-white text-center bg-adobe md:w-1/6 rounded shadow-deep p-4 md:p-10 z-40"
+        class="z-40 hidden p-4 text-center text-white rounded shadow-lg md:block bg-adobe md:w-1/6 "
       >
         <g-image src="@/assets/images/designer_panel_1_utils.jpg" alt="" />
       </div>
 
       <div
-        class="text-white bg-magenta md:w-5/6 py-1 md:pl-12 md:pr-6 md:-ml-6 rounded shadow-md"
+        class="py-1 text-white rounded shadow-md bg-magenta-500 md:w-5/6 md:pl-12 md:pr-6 md:-ml-6"
       >
-        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">
+        <h4 class="mt-12 mb-3 text-4xl text-center h4">
           The utilities tab.
         </h4>
         <p
-          class="font-extrabold mx-4 md:mx-10 my-0 text-magenta-darker text-center rounded px-10 py-4 bg-magenta-lightest shadow"
+          class="px-10 py-4 mx-4 my-0 font-extrabold text-center rounded shadow md:mx-10 text-magenta-700 bg-magenta-200"
         >
-          This tab consist of common menu hunted items, quick shortcuts, and
-          image optimization tools.
+          This tab of the panel consists of common menu items, quick shortcuts,
+          and image optimization/conversion tools. Minimize menu hunting by
+          using these utilities.
         </p>
-        <div class="inline-block md:flex mb-12 md:mb-2">
+        <div class="inline-block mt-4 mb-12 md:flex md:mb-2 md:ml-8">
           <div
-            class="inline-block text-sm md:text-base md:px-8 w-1/2 md:w-1/3 align-text-top"
+            class="inline-block w-1/2 text-xs align-text-top md:text-sm md:px-8 md:w-1/3"
           >
-            <ul class="mr-1 -ml-1 md:mx-1">
+            <ul class="mr-1 list-disc">
               <li>Quick Drop Shadows</li>
               <li>Clear Layer Syle</li>
               <li>Smart Filter Reset</li>
@@ -89,9 +89,9 @@
             </ul>
           </div>
           <div
-            class="inline-block text-sm md:px-8 w-1/2 md:w-1/3 align-text-top"
+            class="inline-block w-1/2 text-sm align-text-top md:px-8 md:w-1/3"
           >
-            <ul class="-ml-1 mr-4">
+            <ul class="mr-4 -ml-1 list-disc">
               <li>Flip and center align layers</li>
               <li>Delete empty layers</li>
               <li>Convert to background layer</li>
@@ -106,8 +106,8 @@
             </ul>
           </div>
 
-          <div class="text-sm md:text-base px-12 md:px-8 md:w-1/3">
-            <ul>
+          <div class="px-12 md:text-sm md:px-8 md:w-1/3">
+            <ul class="list-disc">
               <li>Convert to smart object</li>
               <li>PNG Optimiazation</li>
               <li>Various image export shortcuts</li>
@@ -123,11 +123,11 @@
             </ul>
           </div>
         </div>
-        <div class="hidden md:flex flex-row text-center">
+        <div class="flex-row hidden text-center md:flex">
           <div class="w-full pb-12">
             <button
               v-scrolly="{ id: '#templates' }"
-              class="btn-default rounded-full font-sans border-0 text-magenta text-lg no-underline bg-white shadow px-6 py-3"
+              class="px-6 py-3 mt-4 font-sans text-lg no-underline bg-white border-0 rounded-full shadow btn-default text-magenta-500"
             >
               all about the templates tab
             </button>
@@ -135,7 +135,7 @@
         </div>
       </div>
       <div
-        class="block relative md:hidden text-white text-center bg-adobe rounded shadow-deep p-4 z-40 -my-6 mx-10 z-40"
+        class="relative z-40 block p-4 mx-10 -my-6 text-center text-white rounded shadow-lg md:hidden bg-adobe"
       >
         <g-image src="@/assets/images/designer_panel_1_utils.jpg" alt="" />
       </div>
@@ -144,24 +144,24 @@
     <!-- START TEMPLATES ROW -->
     <div
       id="templates"
-      class="relative block md:flex flex-row items-center -my-6  md:py-6 md:px-6 md:px-12 z-30"
+      class="relative z-30 flex-row items-center block -my-6 md:pl-12 md:flex md:py-6 md:px-6"
     >
       <!-- START 5/6 COLUMN -->
       <div
-        class="text-white bg-cyan md:w-5/6 py-1 md:pr-12 md:pl-6 md:rounded shadow-md"
+        class="py-1 text-white shadow-md bg-cyan-500 md:w-5/6 md:pr-12 md:pl-6 md:rounded"
       >
-        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">
+        <h4 class="mt-12 mb-0 mb-3 text-4xl text-center h4">
           Templates
         </h4>
         <p
-          class="font-extrabold mx-10 my-0 text-cyan-darker text-center rounded px-10 py-4 bg-cyan-lightest shadow"
+          class="px-10 py-4 mx-10 my-0 font-extrabold text-center rounded shadow text-cyan-700 bg-cyan-100"
         >
           Easily load common templates including assets like buttons, social
           media layouts, and website grids.
         </p>
-        <div class="flex-row block md:flex">
-          <div class="px-2 md:px-8 md:w-1/3">
-            <ul>
+        <div class="flex-row block mt-4 md:flex">
+          <div class="px-2 md:pl-12 md:px-8 md:w-1/3">
+            <ul class="ml-4 text-sm list-disc">
               <li>Social media cover & profile</li>
               <li>Quick links to useful sites</li>
               <li>
@@ -176,7 +176,7 @@
             </ul>
           </div>
           <div class="px-2 md:px-8 md:w-1/3">
-            <ul>
+            <ul class="text-sm list-disc">
               <li>9 unique ecom starting points</li>
               <li>Basic site grid</li>
               <li>Auto dealership template</li>
@@ -191,7 +191,7 @@
           </div>
 
           <div class="px-2 md:px-8 md:w-1/3">
-            <ul>
+            <ul class="text-sm list-disc">
               <li>Font awesome icons</li>
               <li>Icomoon icons</li>
               <li>3 button sets</li>
@@ -206,11 +206,11 @@
             </ul>
           </div>
         </div>
-        <div class="flex flex-row text-center">
-          <div class="w-full pb-12 mt-6">
+        <div class="flex flex-row justify-center text-center">
+          <div class="flex justify-center w-full pb-12 mt-6">
             <button
               v-scrolly="{ id: '#edits' }"
-              class="hidden md:block rounded-full text-cyan font-sans no-underline text-lg bg-white shadow px-6 py-3"
+              class="hidden px-6 py-3 font-sans text-lg no-underline bg-white rounded-full shadow md:block text-cyan-500"
             >
               last but not least, the edits tab
             </button>
@@ -220,7 +220,7 @@
 
       <!-- START 1/6 COLUMN -->
       <div
-        class="text-white text-center bg-adobe md:w-1/6 md:-ml-6 rounded shadow-deep mx-10 -mt-6 p-4 md:p-10 md:m-3 z-40"
+        class="z-40 p-4 mx-10 -mt-6 text-center text-white rounded shadow-lg bg-adobe md:w-1/6 md:-ml-6 md:m-3"
       >
         <g-image src="@/assets/images/designer_panel_2.jpg" alt="" />
       </div>
@@ -229,40 +229,40 @@
     <!-- START EDITS ROW -->
     <div
       id="edits"
-      class="block md:flex flex-row items-center md:py-6 md:px-12"
+      class="flex-row items-center block md:flex md:py-6 md:px-12"
     >
       <!-- START 1/6 COLUMN -->
       <div
-        class="relative hidden md:block text-white text-center bg-adobe md:w-2/3 md:-mr-6 rounded shadow-deep p-2 md:p-10 md:m-3 -mb-6 z-40"
+        class="relative z-40 hidden p-2 -mb-6 text-center text-white rounded shadow-lg md:block bg-adobe md:w-2/3 md:-mr-6 md:p-4 md:m-3"
       >
         <g-image src="@/assets/images/designer_panel_3_edits_all.jpg" alt="" />
       </div>
       <!-- START 5/6 COLUMN -->
       <div
-        class="bg-yellow md:bg-black text-black md:text-white md:w-1/3 py-1 pb-16 md:pb-4 md:pl-12 md:pr-6 rounded shadow-md -mb-8"
+        class="py-1 pb-16 -mb-8 text-black bg-yellow-500 rounded shadow-md md:bg-black md:text-white md:w-1/3 md:pb-4 md:pl-12 md:pr-6"
       >
-        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">
+        <h4 class="mt-12 mb-3 text-4xl text-center h4">
           Image Edits
         </h4>
         <p
-          class="font-extrabold mx-10 my-0 text-grey-darker text-center rounded px-10 py-4 bg-grey-lightest shadow"
+          class="px-10 py-4 mx-10 my-0 font-extrabold text-center text-gray-700 bg-gray-100 rounded shadow"
         >
           The edits section is the largest tab, because it includes nested
           accordions with tools for background removal, camera raw effects,
           layer effects, and photo retouching.
         </p>
 
-        <div class="w-full text-center items-center">
+        <div class="items-center w-full text-center">
           <button
             v-scrolly="{ id: '#contact' }"
-            class="hidden md:inline-block self-center rounded-full font-sans text-black text-lg no-underline bg-white shadow px-6 py-3 mt-6"
+            class="self-center hidden px-6 py-3 mt-6 font-sans text-lg text-black no-underline bg-white rounded-full shadow md:inline-block"
           >
             need an extension like this?
           </button>
         </div>
 
         <div
-          class="md:bg-transparent bg-adobe p-2 mt-6 justify-center items-center align-middle text-center"
+          class="items-center justify-center p-2 mt-6 text-center align-middle md:bg-transparent bg-adobe"
         >
           <g-image
             src="@/assets/images/designer_panel_3_edits_all.jpg"
@@ -276,23 +276,23 @@
     <!-- START CONTACT ROW -->
     <div
       id="contact"
-      class="flex flex-row items-center py-6 px-2 md:px-12 mb-32 pb-32 justify-center"
+      class="flex flex-row items-center justify-center px-2 py-6 pb-32 mb-32 md:px-12"
     >
       <!-- START FULL COLUMN -->
       <div
-        class="text-white bg-cyan -mt-2 py-1 md:pl-12 md:pr-6 rounded shadow-deep justify-center"
+        class="justify-center w-full py-1 -mt-2 text-white rounded shadow-lg bg-cyan-500 md:pl-12 md:pr-6"
       >
-        <h4 class="text-4xl text-center mt-12 mb-0 mb-3 h4">
+        <h4 class="mt-12 mb-0 mb-3 text-4xl text-center h4">
           Contact Me
         </h4>
 
         <p
-          class="font-extrabold text-sm mx-4 md:mx-24 my-0 text-cyan-darker text-center rounded px-10 py-4  mx-auto justify-center bg-cyan-lightest shadow"
+          class="justify-center px-10 py-4 mx-4 mx-auto my-0 text-sm font-extrabold text-center rounded shadow md:mx-24 text-cyan-700 bg-cyan-100"
         >
           I am currently looking for opportunities involving Vue.js, Node, Vuex,
-          GraphQl, and various other modern technology stacks. Go ahead and send
-          me a message, and if you would like to review my resume, it can be
-          provided upon request. <br />Have a great day!
+          GraphQL, and various other modern technology stacks. <br />Go ahead
+          and send me a message, and if you would like to review my resume, it
+          can be provided upon request. <br />Have a great day!
         </p>
 
         <contact-form class="mx-4 mt-8" />
@@ -302,13 +302,15 @@
 </template>
 
 <script>
-import ContactForm from '../components/ContactForm'
+import ContactForm from "../components/ContactForm";
 export default {
+  metaInfo: {
+    title: "Designer Panel",
+  },
   components: {
-    ContactForm
-  }
-}
+    ContactForm,
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

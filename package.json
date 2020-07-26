@@ -1,9 +1,9 @@
 {
-  "name": "codestuff-frontend",
+  "name": "codestuff",
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "rm -R .cache && gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
@@ -11,24 +11,14 @@
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
-    "@fullhuman/postcss-purgecss": "^1.2.0",
-    "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/source-filesystem": "^0.5.0",
-    "@gridsome/transformer-remark": "^0.3.2",
-    "D": "^1.0.0",
-    "aos": "^2.3.4",
-    "baguettebox.js": "^1.11.0",
-    "evil-icons": "^1.10.1",
-    "gridsome": "^0.5.0",
-    "gridsome-plugin-netlify-cms": "^1.0.6",
-    "netlify-cms": "^2.9.1",
-    "three": "^0.104.0",
-    "three-full": "^17.1.0",
-    "vue-burger-menu": "^2.0.1",
-    "vue2-smooth-scroll": "^1.0.5"
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "baguettebox.js": "^1.11.1",
+    "gridsome": "^0.7.0",
+    "three": "^0.118.3",
+    "three-full": "^28.0.2",
+    "vue-burger-menu": "^2.0.5"
   },
   "devDependencies": {
-    "eslint-plugin-vue": "^5.2.2",
-    "tailwindcss": "^0.7.4"
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }

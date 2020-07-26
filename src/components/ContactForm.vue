@@ -27,7 +27,7 @@
             name="name"
             required
             placeholder="adam"
-            class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-xl md:mx-2"
+            class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-600 shadow-md font-sans text-xl md:mx-2"
           />
         </div>
 
@@ -41,7 +41,7 @@
             name="email"
             placeholder="awesome@email.com"
             required
-            class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-dark shadow-md font-sans text-xl md:mx-2"
+            class="w-5/6 md:w-2/3 p-2 px-4 ml-2 md:px-6 rounded-full border-0 text-cyan-600 shadow-md font-sans text-xl md:mx-2"
           />
         </div>
       </div>
@@ -52,7 +52,7 @@
       <div class="flex w-full">
         <textarea
           v-model="formData.message"
-          class="rounded-lg flex-grow font-sans text-xl p-5 border-0 text-cyan-dark shadow-md self-center justify-center"
+          class="rounded-lg flex-grow font-sans text-xl p-5 border-0 text-cyan-600 shadow-md self-center justify-center"
           placeholder="hey there"
           required
           rows="8"
@@ -77,33 +77,32 @@ export default {
   data() {
     return {
       formData: {
-        'form-name': 'contact',
-        'bot-field': ''
-      }
-    }
+        "form-name": "contact",
+        "bot-field": "",
+      },
+    };
   },
   methods: {
     encode(data) {
       return Object.keys(data)
         .map(
-          key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
         )
-        .join('&')
+        .join("&");
     },
     handleSubmit() {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          ...this.formData
-        })
+          ...this.formData,
+        }),
       })
-        .then(() => this.$router.push('/success'))
-        .catch(e => alert(e))
-    }
-  }
-}
+        .then(() => this.$router.push("/success"))
+        .catch((e) => alert(e));
+    },
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

@@ -1,57 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800');
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,800");
 @import url("https://use.typekit.net/wwk3eyy.css");
 
 @tailwind base;
 @tailwind components;
 
 .btn-default {
-  @apply rounded-full font-sans no-underline cursor-pointer shadow px-6 py-3;
-  transition: background-color .3s, transform .3s;
+  @apply rounded-full font-sans no-underline cursor-pointer shadow-md px-6 py-3;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-default:hover {
+  @apply shadow-lg;
   transform: translateY(-3px);
 }
 
 .btn-xs {
-  @apply rounded-full font-sans no-underline text-xs cursor-pointer shadow px-3 py-1;
-  transition: .3s;
+  @apply rounded-full font-sans no-underline text-xs cursor-pointer shadow-md;
+  transition: 0.3s;
 }
 
 .btn-xs:hover {
-  @apply border border-white;
-  transform: translateY(-2px);
+  @apply shadow-lg;
+  transform: translateY(-3px);
 }
 
 @tailwind utilities;
-
 
 body {
   margin: 0;
 }
 
-.nav-link, a {
-  transition: transform .4s;
+.nav-link,
+a {
+  transition: transform 0.4s;
 }
 
 .nav-link:hover {
   transform: translateY(-3px);
 }
 
-h1, h2, h3, .h1, .h2, .h3 {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
   font-family: "Rift", sans-serif;
   font-weight: 700;
 }
 
-h4, h5, h6, .h4, .h5, .h6 {
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
   font-family: "Rift", sans-serif;
   font-style: italic;
   font-weight: 400;
 }
 
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* gallery styles for design and photo pages */
 .img-gallery {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .img-gallery:hover {
@@ -61,6 +77,3 @@ h4, h5, h6, .h4, .h5, .h6 {
 .baguetteBox-button {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
-
-

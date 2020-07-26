@@ -61,7 +61,7 @@
       </PushRotate>
     </ClientOnly>
     <nav
-      class="flex items-center justify-between flex-wrap bg-cyan w-screen z-50 pin-t shadow-lg"
+      class="flex items-center justify-between flex-wrap bg-cyan-500 w-screen z-50 shadow-lg"
     >
       <div class="flex items-center flex-no-shrink text-white lg:ml-4">
         <g-link
@@ -93,16 +93,16 @@
               :links="[
                 {
                   text: 'cliplo',
-                  to: '/cliplo'
+                  to: '/cliplo',
                 },
                 {
                   text: 'designer panel',
-                  to: '/designer-panel'
+                  to: '/designer-panel',
                 },
                 {
                   text: 'betapic',
-                  to: '/betapic'
-                }
+                  to: '/betapic',
+                },
               ]"
             />
           </li>
@@ -140,28 +140,28 @@
 </template>
 
 <script>
-import Dropdown from './Dropdown'
+import Dropdown from "./Dropdown";
 export default {
-  name: 'Header',
+  name: "Header",
   components: {
     Dropdown,
     PushRotate: () =>
-      import('vue-burger-menu')
-        .then(m => m.PushRotate)
-        .catch()
+      import("vue-burger-menu")
+        .then((m) => m.PushRotate)
+        .catch(),
   },
   mounted() {},
   data() {
     return {
-      isMobileNavHidden: true
-    }
+      isMobileNavHidden: true,
+    };
   },
   methods: {
     showMobileNav(danStatus) {
-      this.isMobileNavHidden = !this.isMobileNavHidden
-    }
-  }
-}
+      this.isMobileNavHidden = !this.isMobileNavHidden;
+    },
+  },
+};
 </script>
 
 <style>

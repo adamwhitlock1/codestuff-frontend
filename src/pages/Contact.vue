@@ -1,49 +1,52 @@
 <template>
   <Layout>
-    <h2 class="text-5xl text-center italic mb-0">
-      Contact codestuff
+    <h2 class="mb-0 text-5xl italic text-center">
+      Contact
     </h2>
-    <div class="flex w-full align-middle justify-center mb-4">
+    <div class="flex justify-center w-full mb-4 align-middle">
       <a
         href="https://github.com/adamwhitlock1"
         target="_blank"
-        class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
+        class="flex items-center self-center justify-center w-12 h-12 mx-3 text-center text-black bg-transparent border-none btn-xs hover:bg-black hover:text-white"
       >
-        <font-awesome :icon="['fab', 'github']" class="text-xl py-2 h-4" />
+        <font-awesome :icon="['fab', 'github']" class="fa-2x" />
       </a>
+
       <a
         href="https://twitter.com/codestuff2"
         target="_blank"
-        class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
+        class="flex items-center self-center justify-center w-12 h-12 mx-3 text-center text-black bg-transparent border-none btn-xs hover:bg-black hover:text-white"
       >
-        <font-awesome :icon="['fab', 'twitter']" class="text-xl py-2 h-4" />
+        <font-awesome :icon="['fab', 'twitter']" class="fa-2x" />
       </a>
       <a
         href="https://dribbble.com/codestuff2"
         target="_blank"
-        class="btn-xs bg-transparent justify-center text-center self-center text-black hover:bg-black hover:text-white mx-3"
+        class="flex items-center self-center justify-center w-12 h-12 mx-3 text-center text-black bg-transparent border-none btn-xs hover:bg-black hover:text-white"
       >
-        <font-awesome :icon="['fab', 'dribbble']" class="text-xl py-2 h-4" />
+        <font-awesome :icon="['fab', 'dribbble']" class="fa-2x" />
       </a>
     </div>
-    <p class="text-center my-0">
+    <p class="my-0 text-center">
       looking for great people to work with<br />
       resume available by request
     </p>
-    <div class="container">
+    <div class="container justify-center mx-auto">
       <contact-form class="mx-4" />
     </div>
   </Layout>
 </template>
 
 <script>
-import ContactForm from '../components/ContactForm'
+import ContactForm from "../components/ContactForm";
 export default {
+  metaInfo: {
+    title: "Contact",
+  },
   components: {
-    ContactForm
-  }
-}
+    ContactForm,
+  },
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,34 +1,14 @@
-const purgecss = require('@fullhuman/postcss-purgecss')
-const tailwind = require('tailwindcss')
+// This is where project configuration and plugin options are located.
+// Learn more: https://gridsome.org/docs/config
 
-const postcssPlugins = [tailwind('./tailwind.js')]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+// Changes here require a server restart.
+// To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Codestuff',
-  siteDescription: 'Software Development, Design, and Photography',
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins
-      }
-    }
-  },
+  siteName: "Codestuff",
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: '_posts/blog/*.md',
-        typeName: 'BlogPost',
-        route: '/:slug'
-      }
+      use: "gridsome-plugin-tailwindcss",
     },
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-141511572-1'
-      }
-    }
-  ]
-}
+  ],
+};

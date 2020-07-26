@@ -1,7 +1,8 @@
 export default {
-  "siteUrl": "",
-  "siteName": "Codestuff",
+  "trailingSlash": true,
+  "pathPrefix": "",
   "titleTemplate": "%s - Codestuff",
-  "siteDescription": "Software Development, Design, and Photography",
-  "version": "0.5.8"
+  "siteUrl": "",
+  "version": "0.7.19",
+  "catchLinks": true
 }
