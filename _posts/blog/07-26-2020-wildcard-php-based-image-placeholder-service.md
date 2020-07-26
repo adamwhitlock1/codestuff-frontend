@@ -8,6 +8,8 @@ description: Wildcard is a simple image placeholder service that provides random
 ---
 Having spent the majority of my work hours coding in PHP, via the context of Wordpress, I really wanted to get outside of that realm and build some stuff from scratch.
 
+[check it out: wildcard.codestuff.io](https://wildcard.codestuff.io/)
+
 Wildcard is a simple image placeholder service that provides random images of various creatures. You can get images of cats, dogs, birds, bugs, tigers, lions, fish, and even the occasional potato 🤫.
 
 To build the api, I used vanilla php, [phrouter](https://github.com/mrjgreen/phroute), and [intervention](http://image.intervention.io/).\
