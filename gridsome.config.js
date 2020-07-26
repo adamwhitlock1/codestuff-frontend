@@ -5,10 +5,28 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Codestuff",
+  siteName: 'Codestuff',
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link'
+    }
+  },
   plugins: [
     {
-      use: "gridsome-plugin-tailwindcss",
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_posts/**/*.md',
+        typeName: 'Post',
+        remark: {}
+      }
     },
-  ],
-};
+    {
+      use: 'gridsome-plugin-tailwindcss'
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`
+    }
+  ]
+}
