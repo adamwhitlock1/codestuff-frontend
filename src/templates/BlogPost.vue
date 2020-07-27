@@ -1,13 +1,27 @@
 <template>
   <Layout>
-    <div class="article">
-      <h1>{{ $page.blogPost.title }}</h1>
-      <span>{{ $page.blogPost.date }}</span>
-      <g-image :src="$page.blogPost.image" />
+    <div class="flex flex-wrap container mx-auto justify-center pt-12">
       <div
-class="content"
-           v-html="$page.blogPost.content"
-/>
+        class="pr-4"
+        :class="{ 'w-2/5': $page.post.image, 'w-full': !$page.post.image }"
+      >
+        <h1
+          class="text-2xl bg-cyan-500 py-2 text-white rounded tracking-wide px-4"
+        >
+          {{ $page.post.title }}
+        </h1>
+        <p class="pr-2 text-right my-3 italic">Posted: {{ $page.post.date }}</p>
+        <div
+          class="content border-t border-yellow-600"
+          v-html="$page.post.content"
+        />
+      </div>
+      <div v-if="$page.post.image" class="w-3/5">
+        <g-image
+          class="rounded shadow-lg border-gray-200 border px-2"
+          :src="$page.post.image"
+        />
+      </div>
     </div>
   </Layout>
 </template>
@@ -16,70 +30,75 @@ class="content"
 export default {
   metaInfo() {
     return {
-      title: this.$page.blogPost.title
+      title: this.$page.post.title
     }
   }
 }
 </script>
 
 <page-query>
-  query BlogPost ($path: String!) {
-    blogPost (path: $path) {
+  query Post ($path: String!) {
+    post(path: $path) {
       title
       date (format: "D MMMM, YYYY")
       content
+      image
     }
   }
 </page-query>
 
 <style>
-  /* .header {
+/* .header {
     margin-bottom: 70px;
   } */
 
-  .article {
-    margin-top: 15px;
-  }
+.article {
+  margin-top: 15px;
+}
 
-  .article h1 {
-    font-size: 40px;
-  }
+.article h1 {
+  font-size: 40px;
+}
 
-  .article img {
-    width: 100%;
-    border-radius: 5px;
-  }
+.article img {
+  width: 100%;
+  border-radius: 5px;
+}
 
-  .article a {
-    color: #4dba87;
-    text-decoration: underline;
-  }
+.content p a {
+  @apply text-magenta-600;
+  text-decoration: underline;
+}
 
-  .article a:hover {
-    text-decoration: none;
-  }
+.content p {
+  @apply mt-2;
+}
 
-  .article span {
-    font-size: 80%;
-    margin-bottom: 20px;
-  }
+.content a:hover {
+  text-decoration: none;
+}
 
-  .article ol, .article ul {
-    list-style-position: outside;
-  }
+.content ol,
+.content ul {
+  list-style-position: outside;
+}
 
-  .article ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
+.content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
 
-  .article .content p:first-child {
-    margin-top: 15px;
-  }
+.content p:first-child {
+  margin-top: 15px;
+}
 
-  .article .content p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
+.article .content p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+iframe {
+  margin-top: 20px;
+}
 </style>

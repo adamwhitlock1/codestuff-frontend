@@ -8,7 +8,7 @@
           Blog archive
         </h3>
 
-        <div class="container flex mx-auto mt-4 archive">
+        <div class="container flex flex-wrap mx-auto mt-4 archive">
           <div
             v-for="(edge, i) in $page.posts.edges"
             class="w-1/3 mb-4 card-column p-3"
@@ -27,7 +27,7 @@
                 <div class="flex justify-end">
                   <g-link
                     class="text-white no-underline bg-black px-4 py-2 hover:bg-white hover:text-black btn-default rounded-full"
-                    to="/blog-archive"
+                    :to="`${edge.node.path}`"
                   >
                     read more
                   </g-link>

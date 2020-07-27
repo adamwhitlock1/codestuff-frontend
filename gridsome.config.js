@@ -13,13 +13,31 @@ module.exports = {
       anchorClassName: 'icon icon-link'
     }
   },
+  templates: {
+    Post: [
+      {
+        path: '/archive/:path',
+        component: './src/templates/BlogPost.vue'
+      }
+    ]
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
         path: '_posts/**/*.md',
         typeName: 'Post',
-        remark: {}
+        remark: {
+          plugins: [
+            ['gridsome-plugin-remark-codesandbox'],
+            [
+              '@noxify/gridsome-plugin-remark-embed',
+              {
+                enabledProviders: ['Youtube', 'Twitter', 'Gist', 'Codepen']
+              }
+            ]
+          ]
+        }
       }
     },
     {
@@ -27,6 +45,12 @@ module.exports = {
     },
     {
       use: `gridsome-plugin-netlify-cms`
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-141511572-1'
+      }
     }
   ]
 }
