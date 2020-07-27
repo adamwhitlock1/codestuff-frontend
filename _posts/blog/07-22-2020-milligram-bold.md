@@ -9,4 +9,3 @@ Milligram is a great little CSS framework, and I have used it with a few persona
 In reading about customizing radio buttons and checkboxes, I extended the milligram inputs to be more unique and still accessible. Below is the CodePen that showcases Millgram Bold.
 
 https://codepen.io/moose62712/pen/zeQmbY
-

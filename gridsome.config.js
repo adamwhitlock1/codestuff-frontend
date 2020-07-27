@@ -35,7 +35,7 @@ module.exports = {
               {
                 enabledProviders: ['Youtube', 'Twitter', 'Gist', 'Codepen'],
                 Codepen: {
-                  iframe: true,
+                  iframe: false,
                   tabs: ['result'],
                   preview: false,
                   theme: 'dark',

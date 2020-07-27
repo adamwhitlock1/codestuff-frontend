@@ -32,6 +32,14 @@ export default {
     return {
       title: this.$page.post.title
     }
+  },
+  mounted() {
+    let codepenScript = document.createElement('script')
+    codepenScript.setAttribute(
+      'src',
+      'https://static.codepen.io/assets/embed/ei.js'
+    )
+    document.head.appendChild(codepenScript)
   }
 }
 </script>
