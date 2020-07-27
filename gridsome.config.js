@@ -33,7 +33,14 @@ module.exports = {
             [
               '@noxify/gridsome-plugin-remark-embed',
               {
-                enabledProviders: ['Youtube', 'Twitter', 'Gist', 'Codepen']
+                enabledProviders: ['Youtube', 'Twitter', 'Gist', 'Codepen'],
+                Codepen: {
+                  iframe: true,
+                  tabs: ['result'],
+                  preview: false,
+                  theme: 'dark',
+                  height: 800
+                }
               }
             ]
           ]
