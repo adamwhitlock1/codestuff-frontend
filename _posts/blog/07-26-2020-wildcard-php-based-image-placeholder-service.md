@@ -2,7 +2,7 @@
 layout: blog
 date: 2020-07-25T21:32:00.000Z
 title: Wildcard - PHP based image placeholder service.
-image: /images/uploads/wildcard.png
+image: /images/uploads/wildcard-2.jpg
 description: Wildcard is a simple image placeholder service that provides random
   images of various creatures.
 ---
