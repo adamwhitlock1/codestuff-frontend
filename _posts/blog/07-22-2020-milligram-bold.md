@@ -2,6 +2,7 @@
 layout: blog
 date: 2020-07-22T15:08:00.000Z
 title: Milligram Bold - CSS Framework Customization
+image: /images/uploads/milligram-bold.png
 description: Milligram with some extra weight and form inputs.
 ---
 Milligram is a great little CSS framework, and I have used it with a few personal projects. I wanted to create a different version of it with some different typography and styling for the form inputs.
