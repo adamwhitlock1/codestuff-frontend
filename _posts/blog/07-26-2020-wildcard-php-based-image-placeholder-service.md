@@ -12,6 +12,6 @@ Having spent the majority of my work hours coding in PHP, via the context of Wor
 
 Wildcard is a simple image placeholder service that provides random images of various creatures. You can get images of cats, dogs, birds, bugs, tigers, lions, fish, and even the occasional potato 🤫.
 
-To build the api, I used vanilla php, [phrouter](https://github.com/mrjgreen/phroute), and [intervention](http://image.intervention.io/).\
-\
+To build the api, I used vanilla php, [phrouter](https://github.com/mrjgreen/phroute), and [intervention](http://image.intervention.io/).
+
 The images are provided via Unsplash, and various sizes are served on the fly.
