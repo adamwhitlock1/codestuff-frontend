@@ -37,9 +37,8 @@ module.exports = {
                 Codepen: {
                   iframe: false,
                   tabs: ['result'],
-                  preview: false,
                   theme: 'dark',
-                  height: 800
+                  height: 600
                 }
               }
             ]
