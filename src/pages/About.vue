@@ -26,7 +26,7 @@
                 class="text-cyan-600"
                 >Dealer Inspire</a
               >, and I have tought Advanced Photoshop and Web Design at Front
-              Range Community College. Aleays looking for new and exciting
+              Range Community College. Always looking for new and exciting
               projects to lend a hand with. My favorite breakfast food is
               waffles, and I think fly fishing is a pretty good time.
             </p>
