@@ -20,7 +20,7 @@
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "netlify-cms": "^2.10.54",
-    "three": "^0.118.3",
+    "three": "^0.125.0",
     "three-full": "^28.0.2",
     "vue-burger-menu": "^2.0.5"
   },
