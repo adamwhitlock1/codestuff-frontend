@@ -12,7 +12,7 @@
         <p
           class="px-10 py-4 my-2 font-extrabold text-yellow-800 bg-yellow-200 rounded shadow md:mx-12 md:my-0"
         >
-          tech used:<br />
+          tech:<br />
           html, css, javascript, node, jquery, velocity.js, adobe scripting
           libraries.
         </p>
@@ -24,8 +24,8 @@
         >
           A concept that was developed while working as a graphic designer. This
           Photoshop extension includes over 100 tools and workflow accelerators
-          for the daily designer. The Designer Panel has a three tab structure
-          including Utilities, Templates, and Edits.
+          for photographers and graphic designers. The Designer Panel has a three tab structure for organization which
+          includes Utilities, Templates, and Edits.
         </p>
         <div class="hidden my-8 md:block">
           <button

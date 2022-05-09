@@ -19,9 +19,9 @@
           class="flex items-center justify-center p-8 font-extrabold rounded text-cyan-800 md:mr-6 md:ml-8 bg-cyan-100 md:shadow"
         >
           <p>
-            tech used:<br />
+            tech:<br />
             vue, nuxt, express, axios, vuex, electron, nedb, carbon cli,
-            tailwindcss.
+            tailwindcss
           </p>
         </div>
 

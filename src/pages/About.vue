@@ -4,7 +4,7 @@
       <div class="block mx-6 md:flex">
         <div class="p-4 mt-4 md:w-2/3 md:mt-16">
           <div class="md:flex">
-            <h3 class="w-full mt-2 mb-0 text-4xl italic text-black">
+            <h3 class="w-full my-2 text-4xl italic text-black">
               HI...I'm Adam!
             </h3>
             <g-image
@@ -14,22 +14,44 @@
             />
           </div>
           <div class="flex">
-            <p
+            <div
               class="px-4 text-xl text-black border-0 border-l-4 border-yellow-500 border-solid md:pr-6"
             >
-              I'm a creative software engineer living in the mountains of
-              Northern Colorado. I enjoy building software for the web and
-              beyond. I'm currently working as a senior developer at
+            <p class="mb-3">
+              A creative software engineer living in the mountains of
+              Northern Colorado. I enjoy frontend and full-stack software for the web and
+              beyond.
+              </p>
+             <p class="mb-3"> I'm currently working on  <a
+                href="https://www.va.gov"
+                target="_blank"
+                class="text-cyan-600 font-semibold"
+                >VA.gov</a
+              > as a senior engineer with
               <a
+                href="https://www.adhocteam.us"
+                target="_blank"
+                class="text-cyan-600 font-bold"
+                >Ad Hoc.</a
+              > I focus on improving accessibility for users through the VA Profile and Authenticated Experience team. Are you a fellow engineer looking for an amazing opportunity? <a href="https://grnh.se/07dc914e2us" target="_blank" class="text-cyan-600 font-semibold">Ad Hoc is hiring!</a></p>
+              <p class="mb-3">
+              In the past I have taught Adobe Photoshop and Web Design at Front
+              Range Community College, and also built software for         <a
                 href="https://www.dealerinspire.com/"
                 target="_blank"
-                class="text-cyan-600"
-                >Dealer Inspire</a
-              >, and I have tought Advanced Photoshop and Web Design at Front
-              Range Community College. Always looking for new and exciting
-              projects to lend a hand with. My favorite breakfast food is
-              waffles, and I think fly fishing is a pretty good time.
-            </p>
+                class="text-cyan-600 font-bold"
+                >Dealer Inspire</a> and         <a
+                href="https://www.madwire.com/"
+                target="_blank"
+                class="text-cyan-600 font-bold"
+                >Madwire Media</a>. Always looking for new and exciting
+              projects to lend a hand with.</p>
+
+              <p class="mb-3">
+              My favorite breakfast food is
+              waffles. I build and fly RC airplanes when the wind isn't too wild outside, and I think fly fishing is a pretty good time.
+              </p>
+            </div>
           </div>
           <div class="flex justify-end w-full ml-4 align-middle md:ml-0">
             <a
@@ -62,7 +84,7 @@
           </div>
         </div>
 
-        <div class="hidden w-1/3 p-4 md:block">
+        <div class="hidden w-1/3 p-4 mt-4 md:block">
           <g-image
             class="w-full mt-20 rounded-lg shadow-lg"
             src="@/assets/images/profile.jpg"

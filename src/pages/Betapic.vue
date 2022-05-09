@@ -19,17 +19,17 @@
           <p
             class="px-10 py-4 mx-12 my-0 font-extrabold bg-white rounded shadow text-magenta-700"
           >
-            tech used: node, polka server, unsplash/pexels/pixabay apis,
-            svelte/sapper, tailwindcss.
+            tech: node, polka server, unsplash, pexels &amp; pixabay apis,
+            svelte, sapper, tailwindcss
           </p>
           <p class="my-4 text-magenta-500">
             Necessity is the mother of invention. As a designer, I wanted to
-            simplify the search for creative commons image assets. Betapic
-            brings Unsplash, Pixabay, and Pexels together into one interface.
+            simplify the search for creative commons images. Betapic
+            brings Unsplash, Pixabay, and Pexels together into one unified search interface.
           </p>
           <div class="mt-8 mb-8">
             <a
-              href="https://betapic.codestuff.io"
+              href="https://betapic.herokuapp.com"
               target="_blank"
               class="px-6 py-3 font-sans text-lg text-white no-underline border-0 rounded-full shadow bg-magenta-500"
             >
