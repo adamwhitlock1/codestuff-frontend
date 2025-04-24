@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/adamwhitlock
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://codestuff.io
+  * I am adamwhitlock (https://keybase.io/adamwhitlock) on keybase.
+  * I have a public key ASBunZGZkgrgM7wOP8RhS8rhM90ZA9EhUPfLDmHM7adAHgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206e9d9199920ae033bc0e3fc4614bcae133dd1903d12150f7cb0e61cceda7401e0a",
+      "host": "keybase.io",
+      "kid": "01206e9d9199920ae033bc0e3fc4614bcae133dd1903d12150f7cb0e61cceda7401e0a",
+      "uid": "9aee010ae1efbe7d960959122aea8d19",
+      "username": "adamwhitlock"
+    },
+    "merkle_root": {
+      "ctime": 1745505039,
+      "hash": "bed86833f3d9fa6914607a33ff41afc389e3fc36f9562d4bed377624d18d62558c25d675dabe1edb8797f6c7605e20a97358f4fdb137b0dbff367ed1eb883604",
+      "hash_meta": "33aed9b5a9ea14220afd6a3d16e55cf908a786a8774d99fafe08bdffddfa8f1b",
+      "seqno": 26742792
+    },
+    "service": {
+      "entropy": "OVJNsTR+v4b0/FUTS0jV/28G",
+      "hostname": "codestuff.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1745505076,
+  "expire_in": 504576000,
+  "prev": "29e6acdeb591817a248873a46cc0bae8a4f111716b54086405e20204b81e9251",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbp2RmZIK4DO8Dj/EYUvK4TPdGQPRIVD3yw5hzO2nQB4Kp3BheWxvYWTESpcCBsQgKeas3rWRgXokiHOkbMC66KTxEXFrVAhkBeICBLgeklHEIM04sHYcapPP6+jwTY2NT8BSd5VWfaLj4AbrJnh4fEkxAgHCo3NpZ8RA3Qn6zusAd8tLvqAbPxMtjk6kW6tF5vMD6luHiobTRMQsvelENf1nT4/dRcTMTtQrUbDchWIe3OBn/yEsOv1QAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKRviQGM0aWJvqrO9BQf0u4vfP6z9D/ooqflnY7AGD/Do3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adamwhitlock
+
+==================================================================
